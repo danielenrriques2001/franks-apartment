@@ -1,0 +1,44 @@
+---
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
+import '../styles/global.css';
+
+
+const {pageTitle} = Astro.props;
+
+---
+
+<html lang="de">
+	<head>
+
+		<meta charset="utf-8" />
+		<meta name="keywords" content="Apartment,Appartement,Berlin,Ferienwohnung,Prenzlauer Berg,Ferienapartment,Ferienappartement">
+		<meta name="description" content="Apartment-Ferienwohnung in Berlin Prenzlauer-Berg. Auf 70 m² findet Ihr ausreichend Platz für bis zu vier Personen.">
+		<meta name="author" content="Frank Hülmandel">
+		<meta name="copyright" content="Frank Hülmandel">
+		<meta name="publisher" content="Frank Hülmandel">
+		<meta name="audience" content="all">
+		<meta name="siteinfo" content="robots.txt">
+		<meta name="distribution" content="global">
+		<meta http-equiv="reply-to" content="info@franksberlin.com">
+		<meta name="language" content="de">
+		<meta name="robots" content="index,follow">
+		<meta http-equiv="content-style-type" content="text/css">
+		<meta http-equiv="content-script-type" content="text/javascript">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;800&display=swap" rel="stylesheet">
+
+		<title>Franks Apartment - {pageTitle}</title>
+	</head>
+	<body>
+		<Header/>
+		<slot/>
+		<Footer/>
+	</body>
+</html>

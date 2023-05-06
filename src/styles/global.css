@@ -1,0 +1,83 @@
+:root {
+
+    --First-Color: #b13a3a;
+    --Second-Color: #FC6D6D;
+    --Third-Color:#631717;
+
+    --Fouth-Color: #0D6325;
+    --Fith-Color: #30B05B;
+}
+html {
+    box-sizing: border-box;
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    scroll-behavior: smooth;
+    background-color: rgb(248, 244, 244);
+
+}
+.heading, h1{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--First-Color);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p, button, a, li {
+   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: rgb(222, 206, 206);
+   text-decoration: none;
+}
+@media (min-width: 769px) {
+    .heading {
+        font-size: 4rem;
+    }
+    
+}
+.heading span {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: rgb(222, 206, 206);
+}
+
+.button-24 {
+    margin-top: 1rem;
+    background: var(--First-Color);
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    
+    }
+
+    .button-24:hover,
+    .button-24:active {
+    background-color: initial;
+    background-position: 0 0;
+   
+    }
+
+    .button-24:active {
+    opacity: .5;
+    }

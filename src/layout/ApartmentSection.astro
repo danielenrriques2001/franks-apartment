@@ -1,0 +1,52 @@
+---
+import CarouselSection from '../components/CarouselSection.astro'
+---
+<section class="appartment">
+    <h1>Willkommen bei franks apartment im bunten und weltoffenen Kiez <span>Prenzlauer Berg.</span></h1>
+    <p>Auf 70m² findet Ihr ausreichend Platz für bis zu vier Personen. Das liebevoll eingerichtete Apartment ist komplett für Selbstversorger ausgestattet und hat allen Komfort. Für Euer Wohlbefinden bietet Euch Frank Massagen direkt im Haus an.</p>
+    
+    <div class="appartment_container">
+            <CarouselSection/>
+        </div>
+        <p>Für Euer Wohlbefinden bietet Euch Frank Massagen direkt im Haus an.</p>
+    </div>
+</section>
+
+<style>
+        .appartment {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .appartment h1 {
+           font-size: 4rem;
+           margin-top: 2rem;
+        }
+        .appartment span {
+            color: var(--Second-Color);
+            text-decoration: underline;
+        }
+        .appartment p {
+            color: #21050d;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 400;
+        }
+        .appartment_info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .appartment_img {
+        width: 50%; /*or whatever you choose*/
+        margin: auto;
+        }
+        .appartment_img img {
+        display: block;
+        width: 100%;
+        max-width: 500px; /*actual image width*/
+        height: auto; /* maintain aspect ratio*/
+        margin: auto; /*optional centering of image*/
+        }
+
+
+</style>
