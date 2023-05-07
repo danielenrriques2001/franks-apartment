@@ -1,38 +1,5 @@
-.container {
-    inline-size: min(100% - 4rem, 70rem);
-    margin-inline: auto;
-  }
 
-  .flow {
-    display: grid;
-    gap: var(--size-3);
-  }
-
-  .page-header {
-    padding-block: var(--size-9);
-    margin-block-end: var(--size-9);
-    background: var(--gradient-16);
-    color: var(--gray-0);
-    box-shadow: var(--shadow-2);
-  }
-
-  .page-title {
-    font-size: var(--font-size-fluid-3);
-  }
-
-  .page-subtitle {
-    font-size: var(--font-size-fluid-1);
-  }
-
-  .section-title {
-    padding-inline-start: var(--size-6);
-    margin-block: var(--size-9) var(--size-3);
-  }
-
-
-
-
-  .media-scroller {
+  .mediaScroller {
     --_spacer: var(--size-3);
     display: grid;
     gap: var(--_spacer);
@@ -55,7 +22,7 @@
     grid-auto-flow: column;
   }
 
-  .media-element {
+  .mediaElement {
     display: grid;
     grid-template-rows: min-content;
     gap: var(--_spacer);
@@ -68,26 +35,33 @@
     margin: 5px;
     cursor: pointer;
 
+
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     
   }
 
 
-  .media-element > img {
+  .mediaImage {
     inline-size: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    position: relative;
   }
 
-  .snaps-inline {
+  .snapsInline {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: var(--_spacer, 1rem);
   }
 
-  .snaps-inline > * {
+  .snapsInline > * {
     scroll-snap-align: start;
   }
 
 
-
+  .OverlayImage {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    
+  }
 
