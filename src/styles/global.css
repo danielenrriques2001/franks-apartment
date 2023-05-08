@@ -6,6 +6,8 @@
 
     --Fouth-Color: #0D6325;
     --Fith-Color: #30B05B;
+
+    --Para-Color : rgb(52, 46, 46);
 }
 html {
     box-sizing: border-box;
@@ -57,7 +59,7 @@ body {
   }
 }
 
-.heading, h1{
+.heading, h1, h2{
     font-family: 'Advent Pro', sans-serif;
     font-size: 3rem;
     font-weight: 800;
@@ -66,6 +68,10 @@ body {
     padding: 0;
     text-align: center;
 }
+h2 {
+  font-size: 2.5rem;
+  color: var(--Third-Color);
+}
 
 p, button, a, li {
     font-family: 'Alata', sans-serif;
@@ -73,7 +79,11 @@ p, button, a, li {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 100;
+    text-align: center;
    
+}
+p {
+  color: var(--Para-Color);
 }
 a, li {
   font-family: 'Advent Pro', sans-serif;

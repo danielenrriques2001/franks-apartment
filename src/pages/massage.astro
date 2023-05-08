@@ -3,7 +3,122 @@ import Layout from "../layout/Layout.astro";
 ---
 
 	<Layout pageTitle = {'Massage'}>
-		<main>
-            <h1>UNSERE WOHNUNG</h1>
+		<main class="massage_main">
+            <h1 class="massage_heading">Massage </h1>
+			
+
+			<div class="container">
+				<h2 class="geschichte">Unsere Geschichte</h2>
+				<div class="geschichte_content hide">
+					<p>Ich lebe seit 1996 in Berlin un bin seit dieser Zeit im Gesundheits- und Sozialwesen tätig.</p>
+					<p>
+						Nachdem ich im Jahr 2000 die Ausbildung zum staatlich anerkannten Heilererziehungspfleger absolviert hatte, arbeitete ich als Sozialarbeiter mit psysich kranken Erwachsenen und anschließend im betreuten Jugendwohnen als WG-Berater. Da ich sehr gerne mit und am Menschen arbeite, spezialierte ich mich danach auf Massagen und dierekte Körperhaltung.
+					</p>
+				</div>
+
+			</div>
+			<div>
+				<h2 class="geschichte">Massagen</h2>
+			<div class="massagen_container hide">
+				<div class="massage">
+					<p>Holistiche Massagen</p>
+					<p>"Holistisch" bedeutet ganzheitlich. Gemeint ist damit die Einheit von Körper und Geist. Ein holistisches Massagekonzept verdeutlich dem Behandelnden, dass er über dn Köroper uach die seelische Ebene seines Partnes berührt.</p>
+					<p>
+					Der Masierende berührt den ganzen Menschen von Kopf bis Fuß und bewirkt bei seinem Partner ein Wechselbad unterschiedlichster Emotionen.
+					</p>
+
+					<div class="massage_preis">
+						<p>30 min - <span>30$</span></p>
+						<p>45 min - <span>45$</span></p>
+						<p>60 min - <span>60$</span></p>
+						<p>90 min - <span>90$</span></p>
+					</div>
+				</div>
+
+				<div class="massage">
+					<p>Thai Massagen</p>
+					<p>
+						Die Thai-Massage besteht aus passiven, dem Yoga entnommenen Streckpositionen und Dehnbewegungen, Gelenkmobilisationen und Druckpunktmassagen. Vereinfacht kann sie daher als Kombination aus (passivem) Yoga und Akupressur zusammengefasst werden.
+					</p>
+
+					<div class="massage_preis">
+						<p>85 min - <span>85$</span></p>
+						<p>45 min - <span>45$</span></p>
+						<p>60 min - <span>60$</span></p>
+						<p>90 min - <span>90$</span></p>
+					</div>
+				</div>
+			</div>
+
+			</div>
+			
 		</main>
 	</Layout>
+
+	<style>
+		/**utils */
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			transition: all 4s ease-in-out;
+		}
+
+		.massage_heading {
+			position: relative;
+			font-size: 5rem;
+		
+		}
+
+		.massage_heading::after {
+			content: 'Deluxe';
+			font-family: cursive;
+			font-weight: 100;
+			font-size: 1rem;
+			display: block;
+			margin-bottom: 2rem;
+			color: var(--Third-Color);
+			
+		}
+
+		@media (min-width: 769px) {
+			.massage_main {
+				min-height: 100vh;	
+			}
+			.massage_heading {
+				font-size: 20rem;
+				
+			
+			}
+			.massage_heading::after {
+				font-size: 1.5rem;
+				position: absolute;
+				top: 85%;
+				left: 80%;
+
+			}
+			.hide {
+				opacity: -1;
+				height: 0px;
+
+			}
+			.geschichte {
+
+			}
+			
+		}
+	
+	</style>
+
+	<script>
+		const geschichteButton = document.querySelectorAll('.geschichte').forEach((e) => {
+			e.addEventListener('click', () => {
+			const nextEle = e.nextElementSibling;
+			nextEle.classList.toggle('hide')
+		})
+		});
+	
+		
+	</script>
