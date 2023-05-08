@@ -35,7 +35,7 @@ const Carousel = () => {
 
        <div className={`menu ${Overlay && 'showMenu'}`}>
           <img className={Styles.OverlayImage} src={'./' + ImageSrc} alt={'This is a item image on big screen'}></img>
-          <button onClick={handleCloseOverlay} className='button-24'>X</button>
+          <button onClick={handleCloseOverlay} className='button'>X</button>
        </div>
        
     </div>

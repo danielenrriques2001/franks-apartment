@@ -22,9 +22,14 @@ import Carousel from "../components/Carousel/Carousel";
             margin: 0 auto;
         }
         .appartment h1 {
-           font-size: 4rem;
+           font-size: 2rem;
            margin-top: 2rem;
            color: var(--Second-Color);
+        }
+        @media (min-width: 769px) {
+            .appartment h1 {
+                font-size: 3rem;
+            }
         }
         .appartment span {
             color: var(--First-Color);
@@ -32,27 +37,16 @@ import Carousel from "../components/Carousel/Carousel";
         }
         .appartment p {
             color: #373434;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             text-align: center;
             font-weight: 300;
         }
-        .appartment_info {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-        .appartment_img {
-        width: 50%; /*or whatever you choose*/
-        margin: auto;
-        }
-        .appartment_img img {
-        display: block;
-        width: 100%;
-        max-width: 500px; /*actual image width*/
-        height: auto; /* maintain aspect ratio*/
-        margin: auto; /*optional centering of image*/
-        }
 
+        @media (min-width: 769px) {
+            .appartment p {
+                font-size: 1.5rem;
+            }
+        }
         .appartment .massage {
             padding: 2rem;
 
