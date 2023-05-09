@@ -17,38 +17,58 @@ import Layout from "../layout/Layout.astro";
 				</div>
 
 			</div>
-			<div>
+			<div class="container">
 				<h2 class="geschichte">Massagen</h2>
-			<div class="massagen_container hide">
-				<div class="massage">
-					<p>Holistiche Massagen</p>
-					<p>"Holistisch" bedeutet ganzheitlich. Gemeint ist damit die Einheit von Körper und Geist. Ein holistisches Massagekonzept verdeutlich dem Behandelnden, dass er über dn Köroper uach die seelische Ebene seines Partnes berührt.</p>
-					<p>
-					Der Masierende berührt den ganzen Menschen von Kopf bis Fuß und bewirkt bei seinem Partner ein Wechselbad unterschiedlichster Emotionen.
-					</p>
-
-					<div class="massage_preis">
-						<p>30 min - <span>30$</span></p>
-						<p>45 min - <span>45$</span></p>
-						<p>60 min - <span>60$</span></p>
-						<p>90 min - <span>90$</span></p>
+			<div class="hide">
+				<div class="massagen_container ">
+					<div class="massage">
+						<h3>Holistiche Massagen</h3>
+						<p>"Holistisch" bedeutet ganzheitlich. Gemeint ist damit die Einheit von Körper und Geist. Ein holistisches Massagekonzept verdeutlich dem Behandelnden, dass er über dn Köroper uach die seelische Ebene seines Partnes berührt.</p>
+						<p>
+						Der Masierende berührt den ganzen Menschen von Kopf bis Fuß und bewirkt bei seinem Partner ein Wechselbad unterschiedlichster Emotionen.
+						</p>
+	
+						<div class="massage_preis">
+							<p>30 min - <span>30$</span></p>
+							<p>45 min - <span>45$</span></p>
+							<p>60 min - <span>60$</span></p>
+							<p>90 min - <span>90$</span></p>
+						</div>
+					</div>
+	
+					<div class="massage">
+						<h3>Thai Massagen</h3>
+						<p>
+							Die Thai-Massage besteht aus passiven, dem Yoga entnommenen Streckpositionen und Dehnbewegungen, Gelenkmobilisationen und Druckpunktmassagen. Vereinfacht kann sie daher als Kombination aus (passivem) Yoga und Akupressur zusammengefasst werden.
+						</p>
+	
+						<div class="massage_preis">
+							<p>85 min - <span>85$</span></p>
+							<p>45 min - <span>45$</span></p>
+							<p>60 min - <span>60$</span></p>
+							<p>90 min - <span>90$</span></p>
+						</div>
 					</div>
 				</div>
+	
+				</div>
 
-				<div class="massage">
-					<p>Thai Massagen</p>
-					<p>
-						Die Thai-Massage besteht aus passiven, dem Yoga entnommenen Streckpositionen und Dehnbewegungen, Gelenkmobilisationen und Druckpunktmassagen. Vereinfacht kann sie daher als Kombination aus (passivem) Yoga und Akupressur zusammengefasst werden.
-					</p>
+			</div>
+			
 
-					<div class="massage_preis">
-						<p>85 min - <span>85$</span></p>
-						<p>45 min - <span>45$</span></p>
-						<p>60 min - <span>60$</span></p>
-						<p>90 min - <span>90$</span></p>
+			<div class="container">
+				<h2 class="geschichte">Kontakt</h2>
+			<div class="hide">
+				<div>
+					<p>Für Reservierungen und Informationen kannst uns wie folgt kontaktieren:</p>
+					<div class="massagen_container">
+						<p class="massage_kontakt">Mobil: 0177 299 5212</p>
+						<p class="massage_kontakt">frank@massage-deluxe.com</p>
 					</div>
+				
 				</div>
 			</div>
+			
 
 			</div>
 			
@@ -56,6 +76,12 @@ import Layout from "../layout/Layout.astro";
 	</Layout>
 
 	<style>
+		.massage_main {
+			overflow-y: hidden;
+			margin-bottom: 5rem;
+			
+		}
+
 		/**utils */
 		.container {
 			width: 80%;
@@ -63,7 +89,30 @@ import Layout from "../layout/Layout.astro";
 			display: flex;
 			flex-direction: column;
 			text-align: center;
-			transition: all 4s ease-in-out;
+			
+		}
+
+		.hide {
+			
+			opacity: 0;
+			height: 0;
+			overflow: hidden;
+			transition: all 3s ease-out;
+				
+			}
+		.show {
+			transition: all 3s ease-out;
+			opacity: 1;
+   			height: auto;
+			overflow: auto;
+
+			
+			}
+
+		.active {
+			font-weight: 900;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			
 		}
 
 		.massage_heading {
@@ -82,11 +131,42 @@ import Layout from "../layout/Layout.astro";
 			color: var(--Third-Color);
 			
 		}
+		.massagen_container {
+			display: flex;
+			flex-direction: column;
+			width: 80%;
+			
+			gap: 2rem;
+			margin: 15px 0px;
+			margin: 0 auto; */
+			
+		}
+		.massage {
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+			padding: 8px 12px;
+			border-radius: 45px;
+		}
+		.massage_preis {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+		}
+		.massage_preis p, .massage_kontakt {
+			background-color: var(--First-Color);
+			padding: 5px;
+			margin: 2px;
+			border-radius: 45px;
+			color: rgb(243, 236, 236);
+			box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+			font-weight: 200;
+		}
+		.massage_preis span {
+			font-weight: 600;
+		}
+
 
 		@media (min-width: 769px) {
-			.massage_main {
-				min-height: 100vh;	
-			}
+
 			.massage_heading {
 				font-size: 20rem;
 				
@@ -99,26 +179,43 @@ import Layout from "../layout/Layout.astro";
 				left: 80%;
 
 			}
-			.hide {
-				opacity: -1;
-				height: 0px;
+			.massagen_container {
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+
 
 			}
-			.geschichte {
-
-			}
+			
 			
 		}
 	
 	</style>
 
 	<script>
-		const geschichteButton = document.querySelectorAll('.geschichte').forEach((e) => {
-			e.addEventListener('click', () => {
-			const nextEle = e.nextElementSibling;
-			nextEle.classList.toggle('hide')
+
+		const geschichteButtons = document.querySelectorAll('.geschichte');
+		geschichteButtons.forEach((button) => {
+			const nextElement = button.nextElementSibling;
+			
+			button.addEventListener('click', (e) => {
+				
+				changeHideShow(nextElement)
+			})
 		})
-		});
+
 	
+		
+	
+		function changeHideShow(nextEle) {
+			if(nextEle.classList.contains('hide')){
+				nextEle.classList.remove('hide');
+				nextEle.classList.add('show')
+			} else {
+				nextEle.classList.add('hide');
+				nextEle.classList.remove('show')
+
+			}	
+		}
 		
 	</script>

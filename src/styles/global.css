@@ -59,7 +59,7 @@ body {
   }
 }
 
-.heading, h1, h2{
+.heading, h1, h2, h3{
     font-family: 'Advent Pro', sans-serif;
     font-size: 3rem;
     font-weight: 800;
@@ -68,9 +68,15 @@ body {
     padding: 0;
     text-align: center;
 }
-h2 {
+h2, h3 {
   font-size: 2.5rem;
   color: var(--Third-Color);
+}
+
+h3 {
+  color: var(--Second-Color);
+  font-size: 1.5;
+  font-weight: 600;
 }
 
 p, button, a, li {
@@ -100,6 +106,7 @@ a, li {
     padding: 0;
     color: rgb(222, 206, 206);
 }
+
 
 /**BUTTON**/
 
