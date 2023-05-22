@@ -74,12 +74,16 @@
     scroll-snap-align: start;
   }
 
-
   .OverlayImage {
-    width: calc(90vw - 500px );
+    width: 80%;
     height: auto;
- 
-  
-
-    
   }
+
+  @media (min-width: 769px) {
+    .OverlayImage {
+      width: calc(90vw - 500px );
+      height: auto;
+    }
+  
+  }
+
