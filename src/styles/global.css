@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/neuropol-2');
+
 :root {
 
     --First-Color: #b13a3a;
@@ -9,6 +11,9 @@
 
     --Para-Color : rgb(52, 46, 46);
 }
+
+
+
 html {
     box-sizing: border-box;
 }
@@ -70,16 +75,64 @@ body {
     padding: 0;
     text-align: center;
 }
-h2, h3 {
-  font-size: 2.5rem;
-  color: var(--Third-Color);
-}
 
-h3 {
-  color: var(--Second-Color);
-  font-size: 1.5;
-  font-weight: 600;
-}
+/*H E A D I N G */
+  .heading  {
+    font-family: 'Neuropol', sans-serif;
+
+  }
+
+  .heading a {
+    font-size: 3rem
+  }
+
+  @media (min-width: 769px) {
+    .heading a {
+      font-size: 5rem;
+    }
+    
+  }
+
+
+  .heading .sub_heading {
+    font-size: 2rem;
+    display: block;
+    text-align: start;
+    text-transform: uppercase;
+  }
+
+  .heading .heading_bett {
+    position: relative;
+  }
+  .heading_bett::after {
+    content: '..';
+    display: block;
+    position: absolute;
+    color: black;
+    top: -5px;
+    left: 30%;
+  
+    color: inherit;
+  }
+
+  @media (min-width: 769px) {
+    .heading_bett::after {
+      top: -15px;
+      left: 1rem;
+    }
+  }
+
+
+  h2, h3 {
+    font-size: 2.5rem;
+    color: var(--Third-Color);
+  }
+
+  h3 {
+    color: var(--Second-Color);
+    font-size: 1.5;
+    font-weight: 600;
+  }
 
 p, button, a, li {
     font-family: 'Alata', sans-serif;
@@ -115,7 +168,7 @@ a, li {
 .button {
     margin-top: 1rem;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.884) 1px 2px 4px;
+    box-shadow: rgba(0, 0, 0, 0.722) 1px 2px 4px;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
@@ -211,7 +264,7 @@ a, li {
     font-size: 5rem;
     padding: 15px;
     border-radius: 15px;
-    font-weight: 500;
+    font-weight: 600;
    
   }
   
