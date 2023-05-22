@@ -8,8 +8,7 @@
 
     <ul class="menu">
       <li><a class="menuItem" href="/apartment">Apartment</a></li>
-      <li><a class="menuItem" href="/umgebung">Umgebung</a></li>
-      <li><a class="menuItem" href="/massage">Massage</a></li>
+      <li><a class="menuItem" href="/umgebung">Prenzlauer Berg</a></li>
       <li><a class="menuItem" href="/kontakt">Kontakt</a></li>
     </ul>
     <button class="hamburger">
@@ -40,6 +39,15 @@ html, body {
   box-sizing: border-box;
 }
 
+.menu > * {
+  visibility: visible;
+  transition: opacity 200ms;
+
+}
+
+.menu:hover > :not(:hover) {
+  opacity: 0.5;
+}
 
  
 

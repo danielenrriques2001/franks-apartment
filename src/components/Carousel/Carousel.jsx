@@ -33,9 +33,9 @@ const Carousel = () => {
         </div>
       ))}
 
-       <div className={`menu ${Overlay && 'showMenu'}`}>
+       <div className={`menu  ${Overlay && 'showMenu' }`} onClick={handleCloseOverlay}>
           <img className={Styles.OverlayImage} src={'./' + ImageSrc} alt={'This is a item image on big screen'}></img>
-          <button onClick={handleCloseOverlay} className='button'>X</button>
+          <button onClick={handleCloseOverlay} className='button button_images'>X</button>
        </div>
        
     </div>

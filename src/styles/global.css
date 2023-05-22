@@ -34,7 +34,7 @@ body {
   padding: 5em;
   width: 100%;
 
-  background-color: rgb(38, 34, 39);
+  
 
 }
 
@@ -43,8 +43,10 @@ body {
   justify-content: center;
   align-items: center;
   color: #21050d;
-  background-color: rgb(38, 34, 39);
   text-align: center;
+}
+.footer, .header {
+  background: url(./bg-body.png) center center  ;
 }
 .footer-size {
   padding: 3em;
@@ -112,9 +114,8 @@ a, li {
 
 .button {
     margin-top: 1rem;
-    
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.722) 1px 2px 4px;
+    box-shadow: rgba(0, 0, 0, 0.884) 1px 2px 4px;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
@@ -151,6 +152,9 @@ a, li {
       font-family: 'Alata', sans-serif;
     }
 
+    .button_images {
+      margin-top: -15px;
+    }
 
     /*HERO MENU*/
 
@@ -204,9 +208,10 @@ a, li {
   }
   
   .menuItem:hover {
-    background-color: var(--First-Color);
+    font-size: 5rem;
     padding: 15px;
     border-radius: 15px;
+    font-weight: 500;
    
   }
   
