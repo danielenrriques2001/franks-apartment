@@ -4,6 +4,7 @@ import Header from "./Header.astro";
 import '../styles/global.css';
 
 
+
 const {pageTitle} = Astro.props;
 
 ---
@@ -36,6 +37,16 @@ const {pageTitle} = Astro.props;
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+		
+		<script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+  crossorigin></script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+  crossorigin></script>
 
 		<title>Franks Apartment - {pageTitle}</title>
 	</head>

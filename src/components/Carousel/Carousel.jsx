@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import Styles from './Carousel.module.css'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
 const Carousel = () => {
 
   const arrayImages = ['franks-1', 'franks-2', 'franks-3', 'franks-4', 'franks-5', 'franks-6', 'franks-7', 'franks-8', 'franks-9', 'franks-10'];
@@ -24,7 +28,12 @@ const Carousel = () => {
   };
 
   return (
-    <>
+    <Swiper
+    spaceBetween={50}
+    slidesPerView={3}
+    onSlideChange={() => console.log('slide change')}
+    onSwiper={(swiper) => console.log(swiper)}
+    >
    
     <div className={`${Styles.mediaScroller} ${Styles.snapsInline}`}>
       {arrayImages.map((image, key) => (
@@ -41,7 +50,7 @@ const Carousel = () => {
     </div>
 
 
-    </>
+    </Swiper>
   );
 };
 
