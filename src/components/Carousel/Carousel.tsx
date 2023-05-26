@@ -1,24 +1,25 @@
 import React, { useState } from 'react'
 import Styles from './Carousel.module.css'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 
 const Carousel = () => {
 
-  const arrayImages = ['franks-1', 'franks-2', 'franks-3', 'franks-4', 'franks-5', 'franks-6', 'franks-7', 'franks-8', 'franks-9', 'franks-10'];
+  const arrayImages: string[] = ['franks-1', 'franks-2', 'franks-3', 'franks-4', 'franks-5', 'franks-6', 'franks-7', 'franks-8', 'franks-9', 'franks-10'];
 
   const [ImageSrc, SetImageSrc] = useState('');
 
   const [Overlay, SetOverlay] = useState(false);
+  
 
+  const handleOverlay = (event: MouseEvent): void => {
+    event.preventDefault();
 
-  const handleOverlay = (event) => {
-    SetImageSrc(event.currentTarget.alt)
-    SetOverlay(true)
+    SetImageSrc(event?.currentTarget?.alt)
+
+    SetOverlay(true)  
   };
 
-  const handleCloseOverlay = (event) => {
+  const handleCloseOverlay = (event): void => {
    
     SetOverlay(false)
 
@@ -28,17 +29,12 @@ const Carousel = () => {
   };
 
   return (
-    <Swiper
-    spaceBetween={50}
-    slidesPerView={3}
-    onSlideChange={() => console.log('slide change')}
-    onSwiper={(swiper) => console.log(swiper)}
-    >
+    <div>
    
     <div className={`${Styles.mediaScroller} ${Styles.snapsInline}`}>
       {arrayImages.map((image, key) => (
         <div key={key} className={Styles.mediaElement} >
-           <img className={Styles.mediaImage} src={'./' + image + '.webp'} alt={image + '.webp'} onClick={(e) => {handleOverlay(e)}}></img>
+           <img className={Styles.mediaImage} src={'./' + image + '.webp'} alt={image + '.webp'} onClick={handleOverlay}></img>
         </div>
       ))}
 
@@ -50,7 +46,7 @@ const Carousel = () => {
     </div>
 
 
-    </Swiper>
+    </div>
   );
 };
 
