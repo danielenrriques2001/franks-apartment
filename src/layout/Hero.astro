@@ -1,6 +1,6 @@
 <section class="hero-image">
     <div class="hero-text">
-      <h1 class="heading-hero">Finde dein Zuhause in unserem Kiez!</h1>
+      <h1 class="heading-hero">Finde dein <br> <span>Zuhause</span> <br> in <br> unserem <br>  Kiez!</h1>
 
       <button class="button">
         <a target="_blank" href="https://www.airbnb.de/rooms/267951?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&check_in=2023-07-30&check_out=2023-08-04&federated_search_id=ef7ac761-8ee3-437d-ba0e-02b9eaada7c8&source_impression_id=p3_1683204831_lmxtMCzJF6dLWSdK">Jetzt Buchen</a>
@@ -9,6 +9,9 @@
   </section>
 
   <style>
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 
     .hero-image {
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(18, 9, 9, 0.615)), url('/hc_008.jpg');
@@ -21,26 +24,33 @@
     }
     
     .hero-text {
-      text-align: center;
+      text-align: left;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       width: 95%;
+
+      
     }
 
 
     .heading-hero {
-        color: var(--First-Color);
-        width: 100%;
+       
+        width: fit-content;
         line-height: 0.80;
+        color: rgb(239, 239, 239);
         
-        text-shadow: 2px 2px 2px black;
         padding: 15px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Marmelad', sans-serif;
         border-radius: 15px;
-        font-weight: 200;
+        font-weight: 500;
+        text-align: left;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        
+       
+      
         
     }
 
@@ -56,6 +66,7 @@
     .heading-hero span {
         color: var(--First-Color);
         text-transform: uppercase;
+        font-weight: 800;
        
     }
 
