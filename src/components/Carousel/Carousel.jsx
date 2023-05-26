@@ -4,14 +4,14 @@ import Styles from './Carousel.module.css'
 
 const Carousel = () => {
 
-  const arrayImages: string[] = ['franks-1', 'franks-2', 'franks-3', 'franks-4', 'franks-5', 'franks-6', 'franks-7', 'franks-8', 'franks-9', 'franks-10'];
+  const arrayImages = ['franks-1', 'franks-2', 'franks-3', 'franks-4', 'franks-5', 'franks-6', 'franks-7', 'franks-8', 'franks-9', 'franks-10'];
 
   const [ImageSrc, SetImageSrc] = useState('');
 
   const [Overlay, SetOverlay] = useState(false);
   
 
-  const handleOverlay = (event: MouseEvent): void => {
+  const handleOverlay = (event) => {
     event.preventDefault();
 
     SetImageSrc(event?.currentTarget?.alt)
@@ -19,11 +19,11 @@ const Carousel = () => {
     SetOverlay(true)  
   };
 
-  const handleCloseOverlay = (event): void => {
+  const handleCloseOverlay = (event) => {
    
     SetOverlay(false)
 
-    setTimeout((): void => {
+    setTimeout(() => {
         SetImageSrc('')
     }, 500);
   };

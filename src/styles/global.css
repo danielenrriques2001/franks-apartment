@@ -51,7 +51,7 @@ body {
   text-align: center;
 }
 .footer, .header {
-  background: url(./bg-body.png) center center  ;
+  background: url(/bg-body.png) center center  ;
 }
 .footer-size {
   padding: 3em;
