@@ -23,7 +23,7 @@ const Carousel = () => {
    
     SetOverlay(false)
 
-    setTimeout(() => {
+    setTimeout((): void => {
         SetImageSrc('')
     }, 500);
   };
