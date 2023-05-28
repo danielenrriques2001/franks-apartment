@@ -250,6 +250,7 @@ a, li {
     margin: 0;
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    transition: all .5s ease-in;
   }
   
   .menuItem {
@@ -257,7 +258,6 @@ a, li {
     font-size: 3rem;
     transition: all .4s ease-in-out;
     
-  
   }
   
   .menuItem:hover {
