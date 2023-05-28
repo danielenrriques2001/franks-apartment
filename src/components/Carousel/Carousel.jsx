@@ -1,49 +1,79 @@
-import React, { useState } from 'react'
-import Styles from './Carousel.module.css'
+import { useState } from 'react'
+import UseOverlay from '../../hooks/UseOverlay'
+import Styles from '../../styles/carousel.module.css'
+import '../../styles/global.css'
+import {arrayImages} from '../../data/ImagesSrc'
+
 
 
 const Carousel = () => {
 
-  const arrayImages = ['franks-1', 'franks-2', 'franks-3', 'franks-4', 'franks-5', 'franks-6', 'franks-7', 'franks-8', 'franks-9', 'franks-10'];
+
+
 
   const [ImageSrc, SetImageSrc] = useState('');
 
   const [Overlay, SetOverlay] = useState(false);
-  
 
-  const handleOverlay = (event) => {
+  const [OverlayComponent] = UseOverlay();
+
+
+  function handleOverlay(event) {
+
     event.preventDefault();
 
-    SetImageSrc(event?.currentTarget?.alt)
+    SetImageSrc(event?.target?.id)
 
     SetOverlay(true)  
   };
 
-  const handleCloseOverlay = (event) => {
+  function handleCloseOverlay(event) {
    
     SetOverlay(false)
 
-    setTimeout(() => {
-        SetImageSrc('')
-    }, 500);
+
   };
+
+
+
+
+
+
 
   return (
     <div>
    
-    <div className={`${Styles.mediaScroller} ${Styles.snapsInline}`}>
+    <div className={`${Styles.media__scroller} ${Styles.snaps__Inline}`}>
+
       {arrayImages.map((image, key) => (
-        <div key={key} className={Styles.mediaElement} >
-           <img className={Styles.mediaImage} src={'./' + image + '.webp'} alt={image + '.webp'} onClick={handleOverlay}></img>
+
+        <div 
+          key={key} 
+          className={Styles.media__Element}>
+           <img 
+              className={`${Styles.media__Image}`} 
+              src={`./${image}.webp`} 
+              alt={`this is a image from ${image}`} 
+              onClick={handleOverlay}
+              id={`${image}.webp`}
+              >
+              
+          </img>
         </div>
       ))}
 
-       <div className={`menu  ${Overlay && 'showMenu' }`} onClick={handleCloseOverlay}>
-          <img className={Styles.OverlayImage} src={'./' + ImageSrc} alt={'This is a item image on big screen'}></img>
-          <button onClick={handleCloseOverlay} className='button'>X</button>
-       </div>
+     
        
     </div>
+      
+      {
+        Overlay &&  <OverlayComponent 
+        handleCloseOverlay={handleCloseOverlay}
+        condition={Overlay}
+        sourceImage={ImageSrc}
+      />
+      }
+   
 
 
     </div>
