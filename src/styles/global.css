@@ -25,6 +25,13 @@ body {
     background-color: rgb(248, 244, 244);
 
 }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -57,6 +64,10 @@ body {
   padding: 3em;
   height: 30px;
 }
+
+    .footer_para {
+        color: rgb(210, 205, 205);
+    }
 
 
 @media (min-width: 769px) {
@@ -210,6 +221,18 @@ a, li {
     }
 
     /*HERO MENU*/
+
+
+    .menu > * {
+      visibility: visible;
+      transition: opacity 200ms;
+    
+    }
+    
+    .menu:hover > :not(:hover) {
+      opacity: 0.5;
+    }
+    
 
     
 .hamburger {

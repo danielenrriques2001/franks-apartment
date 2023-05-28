@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth;
+}
+.main {
+    margin-bottom: 2rem;
+}
+.apartment_Container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.apartment_Container a {
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    border-bottom: none;
+}
+.apartment_Container a:hover {
+    border-bottom: 1px solid var(--Second-Color);
+}	
+
+@media (min-width: 769px) {
+    .room_container {
+    height: 100vh;
+}
+}
+
+.room_container p {
+    color: rgb(42, 40, 40);
+    text-align: center;
+}
+.room_container-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    
+    
+}
+
+@media ( min-width: 769px) {
+    .room_container-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            
+
+    }
+}
+
+.images_container {
+    
+      flex-basis: 350px; 
+    width: 350px;
+
+}
+/* @media ( min-width: 769px) {
+    .images-container {
+        width: auto;
+        flex-basis: 0; 
+    }
+} */
+
+.images_container img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media ( min-width: 769px) {
+    .images_container img {
+        height: 30rem;
+        object-fit: cover;
+
+        
+    }
+}

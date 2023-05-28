@@ -9,8 +9,6 @@ import {arrayImages} from '../../data/ImagesSrc'
 const Carousel = () => {
 
 
-
-
   const [ImageSrc, SetImageSrc] = useState('');
 
   const [Overlay, SetOverlay] = useState(false);
