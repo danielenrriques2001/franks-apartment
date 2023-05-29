@@ -1,0 +1,22 @@
+---
+import Styles from  '../styles/apartment.module.css'
+const { name, description, images } = Astro.props
+
+---
+<div class={Styles["room_container"]}>
+    
+    <h2>{name}</h2>
+    <p>
+       {description}
+    </p>
+    <div class={Styles["room_container-images"]}>
+
+        {
+            images.map((item) => (
+            <div class={Styles["images_container"]} >
+                <img src={item} alt="wohnraum foto">
+            </div>
+            ))
+        }
+    </div>
+</div>

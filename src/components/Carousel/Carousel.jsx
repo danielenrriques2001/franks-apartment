@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Modal from '../Modal'
-import {arrayImages} from '../../data/ImagesSrc'
+import {arrayImages} from '../../data/data'
 
 import Styles from '../../styles/carousel.module.css'
 import '../../styles/global.css'
