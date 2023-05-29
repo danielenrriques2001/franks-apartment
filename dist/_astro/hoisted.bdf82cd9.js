@@ -1,1 +1,0 @@
-import"./Header.astro_astro_type_script_index_0_lang.a1519bbf.js";const c=document.querySelectorAll(".geschichte");c.forEach(s=>{const e=s.nextElementSibling;s.addEventListener("click",t=>{i(e)})});function i(s){s.classList.contains("hide")?(s.classList.remove("hide"),s.classList.add("show")):(s.classList.add("hide"),s.classList.remove("show"))}
