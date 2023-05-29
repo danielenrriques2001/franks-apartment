@@ -12,12 +12,12 @@ export const dataApartment = [
         name: 'Küche', 
         description: 'Die Küche mit Spüle, Herd, Geschirrspüler und Kühlschrank ist komplett für Selbstversorger ausgestattet. Die Basics Kaffee,Tee, Kakao und Müsli sind inklusive.', 
         
-        images: ['küche/hc_015.jpg','küche/hc_016.jpg', 'küche/hc_017.jpg', 'küche/hc_018.jpg'] 
+        images: ['/küche/hc_015.jpg','/küche/hc_016.jpg', '/küche/hc_017.jpg', '/küche/hc_018.jpg'] 
     },
     {
         name: 'Bad', 
         description: 'Das moderne Bad ist neu gefliest und mit Dusche und WC ausgestattet. Handtücher liegen für Euch bereit.', 
         
-        images: ['bad/hc_020.jpg','bad/hc_021.jpg', 'bad/hc_022.jpg'] 
+        images: ['/bad/hc_020.jpg','/bad/hc_021.jpg', '/bad/hc_022.jpg'] 
     },
  ]
