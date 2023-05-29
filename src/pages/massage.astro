@@ -3,8 +3,8 @@ import Layout from "../layout/Layout.astro";
 import Styles from  '../styles/massage.module.css';
 ---
 
-	<Layout pageTitle = {'Massage'}>
-		<main class= {Styles.main}>
+	<Layout pageTitle={'Massage'}>
+		<main class={Styles['main']}>
             <h1 class={Styles.massage_heading}>Massage </h1>
 			
 
@@ -19,7 +19,7 @@ import Styles from  '../styles/massage.module.css';
 
 			</div>
 			<div class={Styles.container}>
-				<h2 class={Styles.geschichte}>Massagen</h2>
+				<h2 class={Styles['geschichte']}>Massagen</h2>
 			<div class={Styles.hide}>
 				<div class={Styles.massagen_container}>
 					<div class={Styles.massage}>
@@ -78,30 +78,3 @@ import Styles from  '../styles/massage.module.css';
 
 	
 
-	<script>
-
-		const geschichteButtons = document.querySelectorAll('.geschichte');
-		geschichteButtons.forEach((button) => {
-			const nextElement = button.nextElementSibling;
-			
-			button.addEventListener('click', (e) => {
-				
-				changeHideShow(nextElement)
-			})
-		})
-
-	
-		
-	
-		function changeHideShow(nextEle) {
-			if(nextEle.classList.contains('hide')){
-				nextEle.classList.remove('hide');
-				nextEle.classList.add('show')
-			} else {
-				nextEle.classList.add('hide');
-				nextEle.classList.remove('show')
-
-			}	
-		}
-		
-	</script>

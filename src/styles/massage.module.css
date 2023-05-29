@@ -18,14 +18,6 @@
     
 }
 
-.hide {
-    
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: all 3s ease-out;
-        
-    }
 .show {
     transition: all 3s ease-out;
     opacity: 1;
@@ -35,11 +27,6 @@
     
     }
 
-.active {
-    font-weight: 900;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
 
 .massage_heading {
     position: relative;
@@ -65,12 +52,15 @@
     gap: 2rem;
     margin: 15px 0px;
     margin: 0 auto; 
+    padding: 25px;
+   
     
 }
 .massage {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     padding: 8px 12px;
     border-radius: 45px;
+    
 }
 .massage_preis {
     display: flex;
@@ -79,12 +69,12 @@
 }
 .massage_preis p, .massage_kontakt {
     background-color: var(--First-Color);
-    padding: 5px;
     margin: 2px;
     border-radius: 45px;
     color: rgb(243, 236, 236);
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     font-weight: 200;
+    padding: 5px 20px;
 }
 .massage_preis span {
     font-weight: 600;

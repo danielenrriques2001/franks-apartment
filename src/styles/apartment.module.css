@@ -1,8 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
-.main {
+.apartment {
     margin-bottom: 2rem;
+}
+.apartment .para {
+    color: blue;
 }
 .apartment_Container {
     display: flex;
@@ -24,13 +27,14 @@ html {
 }	
 
 @media (min-width: 769px) {
-    .room_container {
+    .apartment .room__container {
     height: 100vh;
+    color: rgb(255, 9, 9);
 }
 }
 
-.room_container p {
-    color: rgb(42, 40, 40);
+.apartment .room__container p {
+    color: rgb(255, 9, 9);
     text-align: center;
 }
 .room_container-images {
