@@ -1,5 +1,5 @@
-import Styles from '../../styles/carousel.module.css'
-import "../../styles/global.css"
+import Styles from '../styles/carousel.module.css'
+import "../styles/global.css"
 
 const Modal = ({handleCloseOverlay, condition, sourceImage}) => {
   

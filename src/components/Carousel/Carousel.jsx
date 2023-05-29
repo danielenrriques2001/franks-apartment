@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import Modal from './Modal'
+import Modal from '../Modal'
+import {arrayImages} from '../../data/ImagesSrc'
+
 import Styles from '../../styles/carousel.module.css'
 import '../../styles/global.css'
-import {arrayImages} from '../../data/ImagesSrc'
+
 
 
 
