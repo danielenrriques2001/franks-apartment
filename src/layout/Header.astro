@@ -1,22 +1,22 @@
 ---
+import HamburgerButton from "../components/HamburgerButton";
+import Nav from "../components/Nav";
 
 ---
+<script src='../helpers/Menu.js'></script>
 
 <header class="header" >
-    <h1 class="heading"><a class="heading" href="/">fra<span class="heading_bett">n</span>ks <span class="sub_heading">apartment</span></a></h1>
+    <h1 class="heading">
+      <a class="heading" href="/">
+        fra<span class="heading_bett">n</span>
+        ks <span class="sub_heading">apartment</span>
+      
+      </a>
+    
+    </h1>
 
-    <ul class="menu">
-      <li><a class="menuItem" href="/apartment">Apartment</a></li>
-      <li><a class="menuItem" href="/umgebung">Prenzlauer Berg</a></li>
-      <li><a class="menuItem" href="/kontakt">Kontakt</a></li>
-    </ul>
-    <button class="hamburger">
-      <div class="container">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-    </button>
+      <Nav/>
+      <HamburgerButton/>
   </header>
 
 
@@ -25,4 +25,3 @@
 
 </style>
 
-<script src='../helpers/Menu.js'></script>
