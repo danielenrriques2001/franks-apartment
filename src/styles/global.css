@@ -25,6 +25,13 @@ body {
     background-color: rgb(248, 244, 244);
 
 }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -57,6 +64,10 @@ body {
   padding: 3em;
   height: 30px;
 }
+
+    .footer_para {
+        color: rgb(210, 205, 205);
+    }
 
 
 @media (min-width: 769px) {
@@ -211,6 +222,18 @@ a, li {
 
     /*HERO MENU*/
 
+
+    .menu > li {
+      visibility: visible;
+      transition: opacity 200ms;
+    
+    }
+    
+    .menu:hover > li:not(:hover) {
+      opacity: 0.5;
+    }
+    
+
     
 .hamburger {
     position: relative;
@@ -227,7 +250,7 @@ a, li {
   .menu {
     position: fixed;
     transform: translateY(-120%);
-    transition: transform 0.2s;
+    transition: transform .5s;
     top: 0;
     left: 0;
     right: 0;
@@ -243,16 +266,21 @@ a, li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+   
   }
+
   
   .showMenu {
     transform: translateY(0);
     margin: 0;
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
-    transition: all .5s ease-in;
+    transition: all .10s ease-in;
+    transition: transform .5s;
   }
-  
+
+
+
   .menuItem {
     font-weight: 100;
     font-size: 3rem;

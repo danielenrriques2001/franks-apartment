@@ -1,21 +1,20 @@
 import { useState } from 'react'
-import UseOverlay from '../../hooks/UseOverlay'
+import Modal from '../Modal'
+import {arrayImages} from '../../data/ImagesSrc'
+
 import Styles from '../../styles/carousel.module.css'
 import '../../styles/global.css'
-import {arrayImages} from '../../data/ImagesSrc'
+
 
 
 
 const Carousel = () => {
 
 
-
-
   const [ImageSrc, SetImageSrc] = useState('');
 
   const [Overlay, SetOverlay] = useState(false);
 
-  const [OverlayComponent] = UseOverlay();
 
 
   function handleOverlay(event) {
@@ -66,13 +65,12 @@ const Carousel = () => {
        
     </div>
       
-      {
-        Overlay &&  <OverlayComponent 
+      <Modal 
         handleCloseOverlay={handleCloseOverlay}
         condition={Overlay}
         sourceImage={ImageSrc}
       />
-      }
+      
    
 
 
