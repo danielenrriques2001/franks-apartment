@@ -1,5 +1,6 @@
 ---
 import HamburgerButton from "../components/HamburgerButton.astro";
+import LanguagePicker from "../components/LanguagePicker.astro";
 import Nav from "../components/Nav.astro";
 
 import { getLangFromUrl, useTranslations } from '../utils/functions.js';
@@ -16,11 +17,14 @@ const lang = getLangFromUrl(Astro.url);
         fra<span class="heading_bett">n</span>ks<span class="sub_heading">apartment</span>
       
       </a>
-    
     </h1>
 
       <Nav/>
-      <HamburgerButton/>
+      <div class="container_flex">
+        <LanguagePicker/>
+        <HamburgerButton/>
+      </div>
+     
   </header>
 
 

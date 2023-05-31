@@ -33,7 +33,7 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2rem;
   margin-left: 0px;
   margin-right: 0px;
@@ -72,6 +72,7 @@ html, body {
   .header {
      
       justify-content: space-between;
+
   }
 }
 
@@ -299,6 +300,13 @@ a, li {
     display: inline-block;
     cursor: pointer;
     
+  }
+
+  .container_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
   }
   
   .bar1, .bar2, .bar3 {
