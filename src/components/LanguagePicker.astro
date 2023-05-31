@@ -1,0 +1,18 @@
+---
+import { languages } from '../utils/ui.js';
+import { getLangFromUrl, getPageName } from '../utils/functions.js';
+
+const lang = getLangFromUrl(Astro.url);
+const page = getPageName(Astro.url) ?? '';
+console.log(page)
+---
+<select class="select" name="forma" onchange="location=this.value;">
+  <option value="">{lang == 'de' ? 'Sprachen' : 'Languages'}</option>
+  {Object.entries(languages).map(([lang, label]) => (
+    <option value={`/${lang}/${page}`}>
+     {label}
+    </option>
+   
+   
+  ))}
+</select>
