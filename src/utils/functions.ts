@@ -12,3 +12,7 @@ export function useTranslations(lang: keyof typeof ui) {
   }
 }
 
+export function getPageName(url: URL) {
+  const [, , name] = url.pathname.split('/');
+  return name;
+}

@@ -10,6 +10,11 @@
     --Fith-Color: #30B05B;
 
     --Para-Color : rgb(52, 46, 46);
+
+
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
 }
 
 
@@ -27,6 +32,48 @@ html, body {
   margin: 0;
   height: 100%;
   overflow-x: hidden;
+}
+
+.select {
+
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 600;
+  color: var(--First-Color);
+  text-align: center;
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  grid-area: select;
+  justify-self: end;
+
+}
+.select option {
+  color: rgb(23, 5, 5);
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 700;
+}
+.select option:first-of-type {
+  color: rgba(29, 24, 24, 0.29);
 }
 
 .header {
