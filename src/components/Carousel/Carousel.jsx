@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Modal from '../Modal'
-import {arrayImages} from '../../data/ImagesSrc'
+import {arrayImages} from '../../data/data'
 
 import Styles from '../../styles/carousel.module.css'
 import '../../styles/global.css'
@@ -51,7 +51,7 @@ const Carousel = () => {
           className={Styles.media__Element}>
            <img 
               className={`${Styles.media__Image}`} 
-              src={`./${image}.webp`} 
+              src={`./../${image}.webp`} 
               alt={`this is a image from ${image}`} 
               onClick={handleOverlay}
               id={`${image}.webp`}

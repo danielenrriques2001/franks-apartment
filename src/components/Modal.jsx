@@ -7,7 +7,7 @@ const Modal = ({handleCloseOverlay, condition, sourceImage}) => {
 return ( 
     <>
         <div className={`menu ${condition && 'showMenu'}`} onClick={handleCloseOverlay}>
-        <img className={`${Styles.overlay__Image}`} src={`./${sourceImage}`} alt={'This is a item image on big screen'}></img>
+        <img className={`${Styles.overlay__Image}`} src={`.././${sourceImage}`} alt={'This is a item image on big screen'}></img>
 
         </div>
     
