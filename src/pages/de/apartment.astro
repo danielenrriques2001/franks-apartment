@@ -1,8 +1,16 @@
 ---
 import Layout from "../../layout/Layout.astro";
 import Styles from "../../styles/apartment.module.css";
-import { dataApartment } from "../../data/data.js";
+
 import Apartment from "../../components/Apartment.astro";
+
+import { apartmentContent } from '../../data/data.js'
+
+import { getLangFromUrl, useTranslations } from '../../utils/functions';
+
+const lang = getLangFromUrl(Astro.url);
+
+const t = useTranslations(lang);
 
 
 ---	
@@ -18,11 +26,12 @@ import Apartment from "../../components/Apartment.astro";
 				
 			</div> -->
 			{
-				dataApartment.map((apartment) => 	(
+				apartmentContent.map((apartment) => 	(
+					
 					<Apartment
-						name = {apartment?.name}
-						description = {apartment?.description}
-						images = {apartment?.images}
+						name = {apartment[lang]?.name}
+						description = {apartment[lang]?.description}
+						images = {apartment[lang]?.images}
 					/>
 				))
 			}

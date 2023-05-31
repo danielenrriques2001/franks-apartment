@@ -1,11 +1,14 @@
 ---
+import { getLangFromUrl, useTranslations } from '../utils/functions.js';
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
     <ul class="menu">
-        <li><a class="menuItem" href="/apartment">Apartment</a></li>
-        <li><a class="menuItem" href="/umgebung">Prenzlauer Berg</a></li>
-        <li><a class="menuItem" href="/kontakt">Kontakt</a></li>
+        <li><a class="menuItem" href="apartment">Apartment</a></li>
+        <li><a class="menuItem" href="umgebung">Prenzlauer Berg</a></li>
+        <li><a class="menuItem" href="kontakt">{t("nav.kontakt")}</a></li>
   </ul>
 
 
