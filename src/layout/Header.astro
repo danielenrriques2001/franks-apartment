@@ -2,12 +2,17 @@
 import HamburgerButton from "../components/HamburgerButton.astro";
 import Nav from "../components/Nav.astro";
 
+import { getLangFromUrl, useTranslations } from '../utils/functions.js';
+
+const lang = getLangFromUrl(Astro.url);
+
+
 ---
 
 
 <header class="header" >
     <h1 class="heading">
-      <a class="heading" href="/">
+      <a class="heading" href=`/${lang}/`>
         fra<span class="heading_bett">n</span>ks<span class="sub_heading">apartment</span>
       
       </a>

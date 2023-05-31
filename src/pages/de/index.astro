@@ -4,16 +4,23 @@ import Layout from "../../layout/Layout.astro";
 import Description from "../../layout/Description.astro";
 
 import {heroContent, descriptionContent} from '../../data/data.js'
+
+import { getLangFromUrl, useTranslations } from '../../utils/functions';
+
+const lang = getLangFromUrl(Astro.url);
+
+const t = useTranslations(lang);
+
 ---
 
 	<Layout pageTitle = {'Prenzlauer Berg'}>
 		<main>
 			
 			<Hero 
-				content={heroContent['de']}
+				content={heroContent[lang]}
 			/>
 			<Description 
-				content = {descriptionContent['de']}
+				content = {descriptionContent[lang]}
 			/>
 		</main>
 	</Layout>

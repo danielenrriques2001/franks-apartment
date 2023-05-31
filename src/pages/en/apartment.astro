@@ -1,28 +1,25 @@
 ---
 import Layout from "../../layout/Layout.astro";
 import Styles from "../../styles/apartment.module.css";
-import { dataApartment } from "../../data/data.js";
 import Apartment from "../../components/Apartment.astro";
 
+import { apartmentContent } from '../../data/data.js'
+
+import { getLangFromUrl, useTranslations } from '../../utils/functions';
+
+const lang = getLangFromUrl(Astro.url);
 
 ---	
 
 	<Layout pageTitle = {'Apartment'}>
 		<main class={Styles['apartment']}>
-            <!-- <h1>UNSERE WOHNUNG</h1>
 
-			<div class="apartment_Container">
-				<a href="#wohnraum">Wohnräume</a>
-				<a href="#küche">Küche</a>
-				<a href="#bad">Bad</a>
-				
-			</div> -->
 			{
-				dataApartment.map((apartment) => 	(
+				apartmentContent.map((apartment) => 	(
 					<Apartment
-						name = {apartment?.name}
-						description = {apartment?.description}
-						images = {apartment?.images}
+						name = {apartment[lang]?.name}
+						description = {apartment[lang]?.description}
+						images = {apartment[lang]?.images}
 					/>
 				))
 			}

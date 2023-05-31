@@ -2,17 +2,22 @@
 import Layout from "../../layout/Layout.astro";
 import Styles from "../../styles/contact.module.css";
 
+import {ContactContent} from '../../data/data.js'
+
+import { getLangFromUrl } from '../../utils/functions';
+
+const lang = getLangFromUrl(Astro.url);
+
 ---
 
 	<Layout pageTitle = {'Buchungen'} >
 		<main class={Styles['main']}>
-			<h1>Kontakt</h1>
+			<h1>{ContactContent[lang]?.heading}</h1>
 			<div class="container">
-				
 
 			<div>
 				
-				<h2>Adresse:</h2>
+				<h2>{ContactContent[lang]?.adresse}:</h2>
 
 				<p>
 					franks apartment
@@ -23,20 +28,13 @@ import Styles from "../../styles/contact.module.css";
 				
 			</div>
 			<div>
-				<h2>Telefon:</h2>
-				<p>
-					Festnetz: +49 (0)30. 91704776
-					Mobil: +49 (0)177. 2995212
-				</p>
+				<h2>{ContactContent[lang]?.Telefon}:</h2>
+				<p>{ContactContent[lang]?.MobilInfo}</p>
 
 			</div>
 
-			<div class={Styles['span']}>
-				<p>
-					Für eine Buchungsanfrage schickt uns bitte eine E-Mail an <span>info@franksberlin.com</span> oder ruft uns an
-					<span>Festnetz 030. 91704776 Mobil unter 0177. 2995212</span>
-				</p>
-
+			<div class={Styles['span']} >
+				<p set:html={ContactContent[lang]?.message}></p>
 			</div>
 
 			</div>
