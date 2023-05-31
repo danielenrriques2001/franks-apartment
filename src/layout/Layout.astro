@@ -4,14 +4,13 @@ import Header from "./Header.astro";
 import '../styles/global.css';
 
 
-
 const {pageTitle} = Astro.props;
 
 ---
 
-<html lang="de">
+<html lang='de'>
 	<head>
-
+		
 		<meta charset="utf-8" />
 		<meta name="keywords" content="Apartment,Appartement,Berlin,Ferienwohnung,Prenzlauer Berg,Ferienapartment,Ferienappartement">
 		<meta name="description" content="Apartment-Ferienwohnung in Berlin Prenzlauer-Berg. Auf 70 m² findet Ihr ausreichend Platz für bis zu vier Personen.">
@@ -30,7 +29,7 @@ const {pageTitle} = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;800&display=swap" rel="stylesheet">
@@ -40,17 +39,20 @@ const {pageTitle} = Astro.props;
 		
 		<script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
 
-<script
-  src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-  crossorigin></script>
+		<script
+		src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+		crossorigin>
+		</script>
 
-<script
-  src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
-  crossorigin></script>
+		<script
+		src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+		crossorigin>
+		</script>
 
-		<title>Franks Apartment - {pageTitle}</title>
+
+		<title>{`${'en' === 'en' ? `Frank's Apartment` : 'Franks Apartment'} - ${pageTitle}`}</title>
 	</head>
-	<body>
+	<body >	
 		<Header/>
 		<slot/>
 		<Footer/>
