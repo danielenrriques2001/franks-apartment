@@ -70,7 +70,7 @@ html, body {
 .select option {
   color: rgb(23, 5, 5);
   font-family: 'Advent Pro', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 .select option:first-of-type {
   color: rgba(29, 24, 24, 0.29);
