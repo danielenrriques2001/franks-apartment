@@ -100,6 +100,7 @@ html, body {
   align-items: center;
   color: #21050d;
   text-align: center;
+
 }
 .footer, .header {
   background: url(/bg-body.png) center center  ;
@@ -107,6 +108,7 @@ html, body {
 .footer-size {
   padding: 3em;
   height: 30px;
+  
 }
 
     .footer_para {
@@ -374,4 +376,17 @@ a, li {
     transform: translate(0, -11px) rotate(45deg);
   }
   
-  
+  .container__grid {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+@media (min-width: 769px) {
+  .container__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}

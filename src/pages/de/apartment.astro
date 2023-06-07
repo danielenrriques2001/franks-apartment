@@ -1,12 +1,11 @@
 ---
 import Layout from "../../layout/Layout.astro";
 import Styles from "../../styles/apartment.module.css";
-
 import Apartment from "../../components/Apartment.astro";
-
 import { apartmentContent } from '../../data/data.js'
-
 import { getLangFromUrl, useTranslations } from '../../utils/functions';
+
+
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -38,6 +37,7 @@ const t = useTranslations(lang);
 
 
 		</main>
+
 	</Layout>
 
 
