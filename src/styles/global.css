@@ -80,7 +80,7 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 2rem;
   margin-left: 0px;
   margin-right: 0px;
@@ -353,9 +353,19 @@ a, li {
 
   .container_flex {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: baseline;
     align-items: center;
-    gap: 45px;
+    gap: 2px;
+   
+  }
+
+  @media (min-width: 769px) {
+    .container_flex {
+      flex-direction: row;
+      
+      gap: 45px;
+    }
   }
   
   .bar1, .bar2, .bar3 {
