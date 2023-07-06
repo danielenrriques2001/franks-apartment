@@ -112,8 +112,9 @@ html, body {
   
 }
 
-    .footer_para {
+.footer_para {
         color: rgb(210, 205, 205);
+        text-transform: lowercase;
         
     }
 
@@ -126,8 +127,8 @@ html, body {
 }
 
 .heading, h1, h2, h3{
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 2rem;
+  font-family: 'Marmelad', sans-serif;
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--First-Color);
     margin: 0;
@@ -203,7 +204,7 @@ html, body {
     font-weight: 600;
   }
 
-p, button, a, li {
+p, a, li {
     font-family: 'Alata', sans-serif;
     color: rgb(222, 206, 206);
     text-decoration: none;
@@ -225,7 +226,6 @@ a, li {
 .button {
     margin-top: 1rem;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.722) 1px 2px 4px;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
@@ -242,25 +242,27 @@ a, li {
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
-    background-color: initial;
+    background: var(--First-Color);
     background-position: 0 0;
     border: none;
+    transition: all .3s ease-in-out;
     }
 
-    .button:hover,
-    .button:active {
-
-    background: var(--First-Color);
+    .button:hover {
+      background-color: var(--Second-Color);
+     
     }
 
-    .button:active {
-    opacity: .5;
-    }
-
-
+  
     .button a {
       font-family: 'Alata', sans-serif;
+     
     }
+    .button a:hover {
+      color: rgb(40,40,40)
+     
+    }
+
 
     .button_images {
       margin-top: -15px;
@@ -362,7 +364,7 @@ a, li {
     .container_flex {
       flex-direction: row;
       
-      gap: 45px;
+      gap: 2rem;
     }
   }
   

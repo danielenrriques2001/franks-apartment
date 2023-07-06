@@ -3,6 +3,14 @@ html {
 }
 .apartment {
     margin-bottom: 2rem;
+    color: #373434;
+    
+    
+
+}
+.apartment__name {
+    font-family: 'Alata', sans-serif;
+    padding: 15px 0px;
 }
 .apartment .para {
     color: blue;

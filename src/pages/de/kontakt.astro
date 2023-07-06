@@ -15,6 +15,12 @@ const lang = getLangFromUrl(Astro.url);
 			<main class={Styles['main']}>
 				<h1>{ContactContent[lang]?.heading}</h1>
 				<div class="container">
+
+					<div>
+						<h2>{ContactContent[lang]?.emailHeading}:</h2>
+						<p>{ContactContent[lang]?.email}</p>
+		
+					</div>
 	
 				<div>
 					
@@ -34,9 +40,7 @@ const lang = getLangFromUrl(Astro.url);
 	
 				</div>
 	
-				<div class={Styles['span']} >
-					<p set:html={ContactContent[lang]?.message}></p>
-				</div>
+
 	
 				
 	

@@ -1,7 +1,13 @@
 
         .appartment {
-            width: 90%;
+            width: 100%;
+            height: 100%;
             margin: 0 auto;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #eeeeee;
         }
         .appartment h1 {
            font-size: 2rem;
@@ -10,7 +16,7 @@
         }
         @media (min-width: 769px) {
             .appartment h1 {
-                font-size: 3rem;
+                font-size: 2.3rem;
             }
         }
         .appartment span {
@@ -21,12 +27,15 @@
             color: #373434;
             font-size: 1.3rem;
             text-align: center;
-            font-weight: 300;
+            font-weight: 100;
+            width: 90%;
+            margin: 0 auto;
+            padding: 15px 5px;
         }
 
         @media (min-width: 769px) {
             .appartment p {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
         }
         .appartment .massage {
