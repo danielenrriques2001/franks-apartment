@@ -3,6 +3,14 @@ html {
 }
 .apartment {
     margin-bottom: 2rem;
+    color: #373434;
+    
+    
+
+}
+.apartment__name {
+    font-family: 'Alata', sans-serif;
+    padding: 15px 0px;
 }
 .apartment .para {
     color: blue;
@@ -53,6 +61,7 @@ html {
             justify-content: center;
             align-items: center;
             margin: 0 auto;
+           
             
 
     }
@@ -78,6 +87,8 @@ html {
     vertical-align: middle;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
 }
 
 @media ( min-width: 769px) {
