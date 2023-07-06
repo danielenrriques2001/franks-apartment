@@ -15,6 +15,7 @@
     --select-border: #777;
     --select-focus: blue;
     --select-arrow: var(--select-border);
+    --Heading-Color:  rgb(222, 206, 206);
 }
 
 
@@ -119,7 +120,6 @@ html, body {
 
 @media (min-width: 769px) {
   .header {
-     
       justify-content: space-between;
 
   }
@@ -127,59 +127,69 @@ html, body {
 
 .heading, h1, h2, h3{
     font-family: 'Advent Pro', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     color: var(--First-Color);
     margin: 0;
     padding: 0;
     text-align: center;
+    
 }
 
 /*H E A D I N G */
   .heading  {
+    font-size: 3rem;
     font-family: 'Neuropol', sans-serif;
+    text-transform: lowercase;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: var(--Heading-Color);
+    fonts-size: 2rem;
 
-  }
-
-  .heading a {
-    font-size: 3rem
   }
 
   @media (min-width: 769px) {
-    .heading a {
-      font-size: 5rem;
+    .heading {
+      font-size: 4rem;
     }
-    
   }
-
 
   .heading .sub_heading {
-    font-size: 2rem;
-    display: block;
-    text-align: start;
-    text-transform: uppercase;
+      font-size: 2rem;
+      display: block;
+      text-align: start;
   }
 
-  .heading .heading_bett {
+  .heading__bett {
     position: relative;
+    margin: 0;
+    padding: 0;
+
   }
-  .heading_bett::after {
+  .heading__bett:after {
     content: '..';
-    display: block;
-    position: absolute;
-    color: black;
-    top: -5px;
-    left: 30%;
-  
-    color: inherit;
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0;
+  top: -25%;
+  left: calc(50% - 9px);
+  z-index: 2;
+
+   
   }
 
   @media (min-width: 769px) {
-    .heading_bett::after {
-      top: -15px;
-      left: 1rem;
+    .heading__bett:after {
+
+    left: calc(50% - 10px);
+
+     
     }
   }
+
+
 
 
   h2, h3 {
@@ -207,18 +217,6 @@ p {
 }
 a, li {
   font-family: 'Advent Pro', sans-serif;
-}
-@media (min-width: 769px) {
-    .heading {
-        font-size: 4rem;
-    }
-    
-}
-.heading {
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    color: rgb(222, 206, 206);
 }
 
 
