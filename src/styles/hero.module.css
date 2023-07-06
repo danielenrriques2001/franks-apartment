@@ -54,11 +54,10 @@
   position: absolute;
   width: 35rem;
   height: 30rem;
-  border: 1px solid #EAEAEA;
   bottom: -5%;
   border-radius: 15px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  transition: all .5s ease-in-out;
+  background-color: white;
 }
 
 .hero__image {
@@ -66,11 +65,14 @@
   background-color: white;
   padding: 15px 15px 60px 15px;
  
-
+  transition: all .4s ease-in;
   object-fit: cover;
   height: 100%;
   width: 100%;
   border-radius: 25px;
+  animation: fade 8s infinite;
+
+  
   
 }
 
@@ -78,5 +80,18 @@
 
 .hero__image:hover {
   cursor: pointer;
-  transform: translate(0px, -35px)
+  transform: translate(0px, -35px);
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
