@@ -30,9 +30,9 @@ export const descriptionContent = {
 
 export const footerContent = {
     de: {
-        para: `Franks Apartment | Frank Hüllmandel | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href=''>Anfahrt</a> | <a href=''>Impressum</a>`,
+        para: `Franks Apartment | Frank Hüllmandel | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/de/anfahrt'>Anfahrt</a> | <a href='/de/impressum'>Impressum</a>`,
     },
-    en: { para: `Franks Apartment | Frank Hüllmandel | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href=''>Directions</a> | <a href=''>Imprint</a>`},
+    en: { para: `Franks Apartment | Frank Hüllmandel | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/en/anfahrt'>Directions</a> | <a href='/en/impressum'>Imprint</a>`},
 }
 
 export const apartmentContent = [
