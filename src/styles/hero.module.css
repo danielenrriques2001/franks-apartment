@@ -5,21 +5,23 @@
 .hero {
  
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat ;
   background-size: cover;
   padding-top: 5rem;
   background-color: rgb(232,218,218);
-  overflow-y: hidden;
+  padding-bottom: 5rem;
 }
 
-.hero-container {
+.container {
+  width: 70%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  height: 100%;
+  margin: 0 auto;
+
 }
 
 
@@ -35,6 +37,8 @@
     color: rgb(40,40,40);
     font-size: 3rem;
     text-align: center;
+
+
     
 }
 
@@ -43,6 +47,9 @@
     color: var(--First-Color);
     font-weight: 800;
     display: block;
+    background: -webkit-linear-gradient(var(--First-Color), var(--Second-Color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
    
    
 }
@@ -54,25 +61,20 @@
 
 .image__container {
   
-  width: 90%;
-  height: 35em;
+  width: 30rem;
+  height: 25rem;
   border-radius: 15px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background-color: white;
-  margin-top: 3rem;
-}
-@media (min-width: 769px) {
-
-  .image__container {
-    position: absolute; 
-    width: 60em;
-    bottom: -3rem;
-   
-
-  }
   
 }
 
+@media (min-width: 769px) {
+  .image__container {
+    width: 45rem;
+    height: 35rem;
+  }
+}
 .hero__image {
   display: block;
   background-color: white;
@@ -82,29 +84,15 @@
   height: 100%;
   width: 100%;
   border-radius: 25px;
-  animation: fade 8s infinite;
   
 
-  
-  
+
 }
 
 
 
 .hero__image:hover {
   cursor: pointer;
-  transform: translate(0px, -35px);
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
