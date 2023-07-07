@@ -42,13 +42,13 @@ export const apartmentContent = [
         name: 'Wohnraüme', 
         description: 'Die hohen Stuckdecken und gepflegten Holzfußböden in den Wohn- und Schlafräumen sorgen für eine freundliche Atmosphäre und sind mit einer weiten Flügeltür verbunden.Neben dem komfortablen Doppelbett im Schlafzimmer steht Euch ein bequemes Schlafsofa für zwei Personen im Wohnzimmer zur Verfügung', 
         
-        images: ['/franks-5.webp', '/franks-1.webp', '/franks-10.webp', '/franks-9.webp'] 
+        images: ['/franks-1.webp', '/franks-10.webp', '/franks-9.webp'] 
     },
     en: {
 
         name:" Living & Bedroom ",
         description: "The high stucco ceilings and well-maintained wooden floor in the living room and bedroom provide a friendly atmosphere and are connected with wide double wing doors. Bed sheets are provided.",
-        images: ['/franks-5.webp', '/franks-1.webp', '/franks-10.webp', '/franks-9.webp'] ,
+        images: ['/franks-1.webp', '/franks-10.webp', '/franks-9.webp'] ,
     }
     },
     {
@@ -57,13 +57,13 @@ export const apartmentContent = [
         name: 'Küche', 
         description: 'Die Küche mit Spüle, Herd, Geschirrspüler und Kühlschrank ist komplett für Selbstversorger ausgestattet. Die Basics Kaffee,Tee, Kakao, Müsli und Gewürze sind inklusiv.', 
         
-        images: ['/küche/hc_015.jpg','/küche/hc_016.jpg', '/küche/hc_017.jpg', '/küche/hc_018.jpg'] 
+        images: ['/küche/hc_015.jpg','/küche/hc_016.jpg', '/küche/hc_017.jpg'] 
     },
     en: {
         name: 'Kitchen', 
         description: 'The kitchen, with sink, gas stovetop, electric oven and refrigerator, is completely furnished for self-catering. The basics coffee, tea, cocoa, muesli and spices are provided.', 
         
-        images: ['/küche/hc_015.jpg','/küche/hc_016.jpg', '/küche/hc_017.jpg', '/küche/hc_018.jpg'] ,
+        images: ['/küche/hc_015.jpg','/küche/hc_016.jpg', '/küche/hc_017.jpg'] ,
     },
 
     },

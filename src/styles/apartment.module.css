@@ -1,16 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+
 html {
     scroll-behavior: smooth;
 }
+
 .apartment {
     margin-bottom: 2rem;
     color: #373434;
-    
-    
+    min-height: calc(100% - 40px)
 
 }
 .apartment__name {
-    font-family: 'Alata', sans-serif;
+    line-height: 0.80;
+    padding: 15px;
+    font-family: 'Marmelad', sans-serif;
+    border-radius: 15px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--First-Color);
+    font-size: 3rem;
+    text-align: center;
     padding: 15px 0px;
+   
 }
 .apartment .para {
     color: blue;
@@ -20,7 +32,8 @@ html {
     text-align: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
+    
     
 }
 .apartment_Container a {
@@ -34,17 +47,32 @@ html {
     border-bottom: 1px solid var(--Second-Color);
 }	
 
-@media (min-width: 769px) {
-    .apartment .room__container {
-    height: 100vh;
+.room_container {
+  
     color: rgb(255, 9, 9);
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0px;
 }
 
-.apartment .room__container p {
-    color: rgb(255, 9, 9);
-    text-align: center;
+@media (min-width: 769px) {
+    .room_container {
+        height: 100vh;
+    }
 }
+.room_container:nth-of-type(odd) {
+    background-color: rgb(232,218,218);
+  
+}
+.room_container:nth-of-type(even) {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+   
+}
+
+
+
 .room_container-images {
     display: flex;
     flex-wrap: wrap;
@@ -69,8 +97,9 @@ html {
 
 .images_container {
     
-      flex-basis: 350px; 
+    flex-basis: 350px; 
     width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
 /* @media ( min-width: 769px) {
@@ -87,7 +116,7 @@ html {
     vertical-align: middle;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   
 
 }
 

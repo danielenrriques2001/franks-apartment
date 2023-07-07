@@ -8,7 +8,9 @@
             flex-direction: column;
             justify-content: center;
             background-color: #eeeeee;
-        }
+            box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+            border-top: 1px solid #bebebe;
+        }       
         .appartment h1 {
            font-size: 2rem;
            margin-top: 2rem;
@@ -21,7 +23,13 @@
         }
         .appartment span {
             color: var(--First-Color);
+          
            
+        }
+        .appartment span:first-child{
+            display: block;
+            font-weigth: 800;
+            
         }
         .appartment p {
             color: #373434;
@@ -40,14 +48,23 @@
         }
         .appartment .massage {
             padding: 2rem;
+            height: 250px;
+            background-color: rgb(232,218,218);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 45px;
 
         }
+
         .appartment .massage a,
         .appartment .massage span {
             text-decoration: none;
             color: var(--First-Color);
             font-size: 1.5rem;
             font-family: 'Alata', sans-serif;
+            display: inline;
+            
 
             
         }
