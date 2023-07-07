@@ -1,11 +1,18 @@
 import { useState } from 'react'
 import Modal from '../Modal'
 import {arrayImages} from '../../data/data'
+import LightGallery from 'lightgallery/react';
+
 
 import Styles from '../../styles/carousel.module.css'
 import '../../styles/global.css'
 
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-zoom.css';
+import 'lightgallery/css/lg-thumbnail.css';
 
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
 
 
 const Carousel = () => {
@@ -14,6 +21,10 @@ const Carousel = () => {
   const [ImageSrc, SetImageSrc] = useState('');
 
   const [Overlay, SetOverlay] = useState(false);
+
+  const onInit = () => {
+    console.log('lightGallery has been initialized');
+};
 
 
 
@@ -42,35 +53,48 @@ const Carousel = () => {
   return (
     <div>
    
-    <div className={`${Styles.media__scroller} ${Styles.snaps__Inline}`}>
+    {/* */}
 
-      {arrayImages.map((image, key) => (
+    <LightGallery
+                onInit={onInit}
+                speed={500}
+                plugins={[lgThumbnail, lgZoom]}
+                elementClassNames={`${Styles.media__scroller} ${Styles.snaps__Inline}`}
+                
+            >         
+              {arrayImages.map((image, key) => (
+                <a 
+                  key={key} 
+                  className={Styles.media__Element}
+                  href={`./../${image}.webp`}
+                  >
+                  <img 
+                      className={`${Styles.media__Image}`} 
+                      src={`./../${image}.webp`} 
+                      alt={`this is a image from ${image}`} 
+                      > 
+                  </img>
+                </a>
 
-        <div 
-          key={key} 
-          className={Styles.media__Element}>
-           <img 
-              className={`${Styles.media__Image}`} 
-              src={`./../${image}.webp`} 
-              alt={`this is a image from ${image}`} 
-              onClick={handleOverlay}
-              id={`${image}.webp`}
-              >
-              
-          </img>
-        </div>
-      ))}
+        
+                ))}
+
+
+    </LightGallery>
+
+     
+
+
 
      
        
-    </div>
-      
-      <Modal 
+{/* 
+      // <Modal 
         handleCloseOverlay={handleCloseOverlay}
         condition={Overlay}
         sourceImage={ImageSrc}
       />
-      
+       */}
    
 
 

@@ -18,12 +18,14 @@
     "astro-i18next": "^1.0.0-beta.21",
     "bootstrap": "^5.2.3",
     "i18next": "^22.5.0",
+    "lightgallery": "^2.7.1",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.3.1",
     "react-icons": "^4.8.0",
+    "react-image-gallery": "^1.2.12",
     "react-responsive-carousel": "^3.2.23",
     "swiper": "^9.3.2"
   }

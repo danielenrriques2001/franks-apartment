@@ -52,8 +52,8 @@
 
 .image__container {
   position: absolute;
-  width: 35rem;
-  height: 30rem;
+  width: 60em;
+  height: 35em;
   bottom: -5%;
   border-radius: 15px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -64,13 +64,13 @@
   display: block;
   background-color: white;
   padding: 15px 15px 60px 15px;
- 
   transition: all .4s ease-in;
   object-fit: cover;
   height: 100%;
   width: 100%;
   border-radius: 25px;
   animation: fade 8s infinite;
+  
 
   
   
