@@ -1,11 +1,31 @@
 ---
 import Layout from "../../layout/Layout.astro";
+import {AnfahrtContent} from '../../data/data'
+import { getLangFromUrl } from '../../utils/functions';
 
-
+const lang = getLangFromUrl(Astro.url);
 ---
 
 	<Layout pageTitle = {'Prenzlauer Berg'}>
 		<main>
+
+			<h1>{AnfahrtContent[lang]?.title}</h1>
+			<p set:html={AnfahrtContent[lang]?.content}></p>
 		
 		</main>
 	</Layout>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+
+		main {
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			min-height: calc(80vh - 40px);
+			font-family: 'Marmelad', sans-serif;
+		}
+
+	</style>

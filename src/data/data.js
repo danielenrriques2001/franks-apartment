@@ -103,3 +103,77 @@ export const ContactContent = {
 
     }
 }
+
+export const AnfahrtContent = {
+    de: {
+        title: 'Anfahrt',
+        content : `franks apartment liegt im Herzen Berlins, im Bezirk Prenzlauer Berg am Helmholtzplatz.
+        Dunckerstrasse 80A, 10437 Berlin. <br/> U-Bhf. Eberswalder Strasse (Linie U2) und
+        S-Bhf. Prenzlauer Allee (Linie S8, S9, S41 und S42 Ring) sind in wenigen Minuten zu Fuß erreichbar. <br/> Metro-Tram M10 Husemannstrasse und Metro-Tram M2 Fröbelstrasse liegen fast vor der Tür. 
+        <br/>
+        <br/>
+        Hauptbahnhof: 
+        <br/>
+        Metro-Tram M10 -> Husemannstrasse Flughafen Schönefeld SXF/BER: S9. Schönefeld -> S-Bhf. Prenzlauer Allee 
+        <br/>
+        Weitere Infos über den öffentlichen Personennahverkehr in Berlin findest Du unter
+        <br/>
+        www.bvg.de.
+        
+        `,
+    },
+    en: {
+        title: 'Directions',
+        content: `Welcome to franks apartment located in the colorful and cosmopolitan neighborhood of Prenzlauer Berg. <br/>
+        With 70m² you'll find plenty of space for up to four people. The caringly decorated apartment is completely furnished for the self-caterer and has all possible conveniences. <br/>
+        For your well-being Frank offers massages right next door in his studio, Massage Deluxe. <br/>
+        We are looking forward to your visit!`,
+    }
+}
+
+export const ImpressumContent = {
+    de: {
+        title: 'Impressum',
+        content : `
+
+            Haftungshinweis: <br/>
+            Ich übernehme keine Haftung für Inhalte externer Links. Die Betreiber, der hier verlinkten Seiten, sind ausschließlich für deren Inhalte verantwortlich.
+            <br/>
+
+            Gewerbliche Schutzrechte: <br/>
+            Alle innerhalb dieser Website genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten des jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch rechte Dritter geschützt sind.
+            <br/>
+          
+
+            Weitergabe personenbezogener Informationen an Dritte: <br/> 
+            Ihre personenbezogenen Daten werden im Falle einer Auftragsbearbeitung nur innerhalb der von Herrn Frank Hüllmandel sowie der verbundenen Unternehmen verwendet und nicht ohne Ihr ausdrückliches Einverständnis an Dritte weitergegeben.
+            <br/>
+
+            Disclaimer: <br/>
+            Verantwortlich für den Inhalt dieser Website ist Frank Hüllmandel. Betreiber und Inhaber ist
+            Frank Hüllmandel.
+            Dunckerstrasse 80a
+            10437 Berlin - Prenzlauer Berg
+            <br/>
+            <br/>
+            Herr Frank Hüllmandel aktualisiert und prüft die Informationen (Bilder, Texte) auf der Webseite ständig. Eine Haftung oder Garantie für die Richtigkeit, Aktualität, und Vollständigkeit der Informationen auf www.franksberlin.com kann nicht übernommen werden. Gleiches gilt auch für alle anderen Websites, auf die mittels Hyperlink verwiesen wird. Herr Frank Hüllmandel ist für den Inhalt der Websites, die aufgrund einer solchen Verbindung erreicht werden, nicht verantwortlich. Des weiteren behalten wir uns das Recht vor, Ergänzungen oder Änderungen der bereitgestellten Informationen vorzunehmen. Inhalt, Struktur und Ergänzungen der Website sind urheberrechtlich geschützt. Die Vervielfältigung von Informationen oder Daten, insbesondere die Verwendung von Bildmaterial, Texten oder Textteilen bedarf der vorherigen schriftlichen Zustimmung von Herrn Frank Hüllmandel. Alle Marken- und Produktnamen sind Marken oder eingetragene Marken der jeweiligen Markeninhaber.
+            <br/><br/>
+
+            Hinweise zum Datenschutz: <br/>
+            Die von Ihnen angegebene E-Mail-Adresse wird nur zu dem Zweck gespeichert und verwendet, Ihnen Informationen zu Neuerungen, Aktionen und Extrasleistungen rund um www.franksberlin.com zu senden. Ich werde die gespeicherten E-Mail-Adressen vertraulich behandeln. Wenn Sie möchten, können Sie zusätzlich Ihren Namen angeben, um zukünftig individuell gestaltete Newsletter zu erhalten. Selbstverständlich werde ich auch Ihren Namen vertraulich behandeln.
+            <br/> <br/>
+            Hinweise zum Copyright: <br/>
+            Sie dürfen nicht kopiert und/oder für kommerzielle Zwecke (komplett oder zum Teil) verwendet werden. Die Vervielfältigung von Informationen oder Daten, insbesondere die Verwendung von Bildmaterial, Texten oder Textteilen bedarf der vorherigen schriftlichen Zustimmung von Herrn Frank Hüllmandel. Verstöße gegen dieses Copyright werden strafrechtlich verfolgt. Gerichtsstand ist Berlin - Deutschland. Alle Marken- und Produktnamen sind Marken oder eingetragene Marken der jeweiligen Markeninhaber.
+            <br/>
+
+
+        `,
+    },
+    en: {
+        title: 'Imprint',
+        content: `Welcome to franks apartment located in the colorful and cosmopolitan neighborhood of Prenzlauer Berg. <br/>
+        With 70m² you'll find plenty of space for up to four people. The caringly decorated apartment is completely furnished for the self-caterer and has all possible conveniences. <br/>
+        For your well-being Frank offers massages right next door in his studio, Massage Deluxe. <br/>
+        We are looking forward to your visit!`,
+    }
+}
