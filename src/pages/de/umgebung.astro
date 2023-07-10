@@ -6,7 +6,15 @@ import { PrenzlauerContent } from "../../data/data";
 
 const lang = getLangFromUrl(Astro.url);
 
-const images = ['franks-16', 'franks-17', 'franks-18', 'franks-19']
+const images = ['franks-16', 'franks-17', 'franks-18', 'franks-19'];
+
+const recommendations = [
+	{name: 'NEO 1', icon: '/food.png'},
+	{name: 'Café Dodo Coffee & Gelato', icon: '/eis.png'},
+	{name: 'Cafe Bäckerei Özzy', icon: '/bakery.png'},
+	{name: 'Bu Kon', icon: '/food.png'},
+	{name: 'Zweistrom', icon: '/street-food.png'},
+]
 
 
 ---
@@ -66,6 +74,34 @@ const images = ['franks-16', 'franks-17', 'franks-18', 'franks-19']
 		cursor: pointer;
 	}
 
+	.recommendations {
+		margin-top: 5rem;
+	}
+	.items__container {
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	@media (min-width: 769px) {
+		.items__container {
+			flex-direction: row;
+			margin-top: 2rem;
+			gap: 5rem;
+		}
+	}
+
+	.item__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.item__container img {
+		width: 5rem;
+	}
+
 
 
 
@@ -89,6 +125,22 @@ const images = ['franks-16', 'franks-17', 'franks-18', 'franks-19']
 
 			<section class="recommendations">
 				<h2>{PrenzlauerContent[lang]?.heading}</h2>
+
+				<div class="items__container">	
+
+					{
+					recommendations.map((item) => (
+					<div class="item__container">
+						<img src={ '/recommendations' + item.icon} alt="food foto">
+						<p>{item.name}</p>
+					</div>
+					))
+
+					}
+
+
+				
+				</div>
 
 			</section>
 		</main>
