@@ -15,7 +15,7 @@ const { name, description, images } = Astro.props
         {
             images.map((item) => (
             <div class={Styles["images__container"]} >
-                <img src={item} alt="wohnraum foto">
+                <img loading="lazy" src={item} alt="wohnraum foto">
             </div>
             ))
         }
