@@ -12,22 +12,28 @@
     overscroll-behavior-inline: contain;
     width: 90%;
     margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     
   }
   .media__scroller::-webkit-scrollbar {
     width: 15px;
    
+   
   }
   .media__scroller::-webkit-scrollbar-track { 
     background-color: rgba(169, 169, 169, 0.397);
+    border-radius: 45px;
+    
   }
   .media__scroller::-webkit-scrollbar-thumb {
-    background-color: var(--Second-Color);
+    background-color: var(--First-Color);
     cursor: pointer;
+    border-radius: 30px;
+
   }
   @media (min-width: 769px) {
     .media__scroller {
-      grid-auto-columns: 15%;
+      grid-auto-columns: 35%;
       grid-auto-flow: column;
     }
   }
@@ -51,10 +57,10 @@
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-2);
     cursor: pointer;
-    padding: 5px;
+
     margin: 5px;
     cursor: pointer;
-
+    border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     
   }
@@ -65,11 +71,16 @@
     aspect-ratio: 16 / 9;
     object-fit: cover;
     position: relative;
+    padding: 5px;
+    
+  
+    
   }
 
   .snaps__Inline {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: var(--_spacer, 1rem);
+    padding:5px;
   }
 
   .snaps__Inline > * {
@@ -79,6 +90,7 @@
   .overlay__Image {
     width: 80%;
     height: auto;
+    
   }
 
   @media (min-width: 769px) {
@@ -87,6 +99,7 @@
       height: auto;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
       border-radius: 15px;
+     
     }
 
   

@@ -1,14 +1,13 @@
 let images = [
-    '/franks-1.webp', 
-    '/franks-2.webp', 
-    '/franks-3.webp',
-    '/franks-4.webp',
-    '/franks-5.webp',
-    '/franks-6.webp',
-    '/franks-7.webp',
-    '/franks-8.webp',
-    '/franks-9.webp',
-    '/franks-10.webp'
+    '/franks-1.jpg',
+    '/franks-2.jpg',
+    '/franks-3.jpg',
+    '/franks-4.jpg',
+    '/franks-5.jpg',
+    '/franks-6.jpg',
+    '/franks-7.jpg',
+    '/franks-8.jpg',
+    '/franks-9.jpg',
 ];
 
 let index = 0;
