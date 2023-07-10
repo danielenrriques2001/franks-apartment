@@ -60,21 +60,16 @@ html, body {
   align-items: center;
   color: #21050d;
   text-align: center;
-
-}
-.footer, .header {
-  background: url(/bg-body.png) center center  ;
-}
-.footer-size {
   padding: 3em;
   height: 30px;
-  
+}
+.footer, .header {
+  background: url(/bg-body.png) center center;
 }
 
-.footer_para {
+.footer__para {
         color: rgb(210, 205, 205);
         text-transform: lowercase;
-        
     }
 
 

@@ -66,11 +66,11 @@ const Carousel = () => {
                 <a 
                   key={key} 
                   className={Styles.media__Element}
-                  href={`./../${image}.webp`}
+                  href={`../${image}.jpg`}
                   >
                   <img 
                       className={`${Styles.media__Image}`} 
-                      src={`./../${image}.webp`} 
+                      src={`../${image}.jpg`} 
                       alt={`this is a image from ${image}`} 
                       > 
                   </img>

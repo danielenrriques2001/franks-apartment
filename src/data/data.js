@@ -1,4 +1,20 @@
-export const arrayImages = ['franks-1', 'franks-2', 'franks-3', 'franks-4', 'franks-5', 'franks-6', 'franks-7', 'franks-8', 'franks-9', 'franks-10'];
+export const arrayImages = [
+    '/franks-1', 
+    '/franks-2', 
+    '/franks-3', 
+    '/franks-4', 
+    '/franks-5', 
+    '/franks-6', 
+    '/franks-7', 
+    '/franks-8',
+     '/franks-9', 
+     '/franks-10', 
+     '/franks-11', 
+     '/franks-12', 
+     '/franks-13', 
+     '/franks-14', 
+     '/franks-15'
+];
 
 
 export const heroContent = {
@@ -42,13 +58,13 @@ export const apartmentContent = [
         name: 'Wohnraüme', 
         description: 'Die hohen Stuckdecken und gepflegten Holzfußböden in den Wohn- und Schlafräumen sorgen für eine freundliche Atmosphäre und sind mit einer weiten Flügeltür verbunden.Neben dem komfortablen Doppelbett im Schlafzimmer steht Euch ein bequemes Schlafsofa für zwei Personen im Wohnzimmer zur Verfügung', 
         
-        images: ['/franks-1.webp', '/franks-10.webp', '/franks-9.webp'] 
+        images: ['/franks-8.jpg', '/franks-10.jpg', '/franks-9.jpg'] 
     },
     en: {
 
         name:" Living & Bedroom ",
         description: "The high stucco ceilings and well-maintained wooden floor in the living room and bedroom provide a friendly atmosphere and are connected with wide double wing doors. Bed sheets are provided.",
-        images: ['/franks-1.webp', '/franks-10.webp', '/franks-9.webp'] ,
+        images: ['/franks-8.jpg', '/franks-10.jpg', '/franks-9.jpg'] 
     }
     },
     {
@@ -57,27 +73,27 @@ export const apartmentContent = [
         name: 'Küche', 
         description: 'Die Küche mit Spüle, Herd, Geschirrspüler und Kühlschrank ist komplett für Selbstversorger ausgestattet. Die Basics Kaffee,Tee, Kakao, Müsli und Gewürze sind inklusiv.', 
         
-        images: ['/küche/hc_015.jpg','/küche/hc_016.jpg', '/küche/hc_017.jpg'] 
+        images: ['/franks-5.jpg', '/franks-6.jpg', '/franks-7.jpg'] 
     },
     en: {
         name: 'Kitchen', 
         description: 'The kitchen, with sink, gas stovetop, electric oven and refrigerator, is completely furnished for self-catering. The basics coffee, tea, cocoa, muesli and spices are provided.', 
         
-        images: ['/küche/hc_015.jpg','/küche/hc_016.jpg', '/küche/hc_017.jpg'] ,
+        images: ['/franks-5.jpg', '/franks-6.jpg', '/franks-7.jpg'] 
     },
 
     },
     {
         de: {
             name: 'Bad', 
-            description: 'Das moderne Bad ist neu gefliest und mit Dusche, WC und Waschmaschine ausgestattet. Handtücher liegen für Euch bereit.', 
-            images: ['/bad/hc_020.jpg','/bad/hc_021.jpg', '/bad/hc_022.jpg'],
+            description: 'Das moderne Bad ist neu gefliest und mit Dusche, WC und Waschmaschine ausgestattet. Handtücher liegen für Euch bereit.',  
+            images: ['/franks-2.jpg','/franks-3.jpg', '/franks-4.jpg'],
 
         },
         en: {
             name: "Bathroom",
             description: "The modern bathroom is newly tiled and equipped with shower, toilet and washing machine. Towels are provided for you.",
-            images: ['/bad/hc_020.jpg','/bad/hc_021.jpg', '/bad/hc_022.jpg'],
+            images: ['/franks-2', '/franks-3', '/franks-4'],
         },
     },
  ]
@@ -175,5 +191,16 @@ export const ImpressumContent = {
         With 70m² you'll find plenty of space for up to four people. The caringly decorated apartment is completely furnished for the self-caterer and has all possible conveniences. <br/>
         For your well-being Frank offers massages right next door in his studio, Massage Deluxe. <br/>
         We are looking forward to your visit!`,
+    }
+}
+
+export const PrenzlauerContent = {
+    de: {
+        intro: 'Unser Apartment befindet sich im attraktiven Bezirk Prenzlauer Berg im Ostteil der Stadt unweit des Helmholtzplatzes, welcher durch die schönen Cafes, Restaurants und individuellen Shops ein beliebter Treffpunkt für Studenten, Künstler und junge Familien ist.',
+        heading: 'Unsere Empfehlungen'
+    },
+    en: {
+        intro: 'Our apartment is located in the attractive district of Prenzlauer Berg in the eastern part of the city, not far from Helmholtzplatz, which is a popular meeting place for students, artists and young families thanks to its beautiful cafes, restaurants and individual shops.',
+        heading: 'Our recommendations'
     }
 }
