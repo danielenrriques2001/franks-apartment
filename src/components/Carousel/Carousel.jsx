@@ -66,12 +66,15 @@ const Carousel = () => {
                 <a 
                   key={key} 
                   className={Styles.media__Element}
+                  rel='prefetch'
                   href={`../${image}.jpg`}
+               
                   >
                   <img 
                       className={`${Styles.media__Image}`} 
                       src={`../${image}.jpg`} 
                       alt={`this is a image from ${image}`} 
+                      loading='lazy'
                       > 
                   </img>
                 </a>

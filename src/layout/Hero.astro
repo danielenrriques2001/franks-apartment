@@ -1,6 +1,7 @@
 ---
 import Styles from '../styles/hero.module.css'
 const {content} = Astro.props;
+
 ---
 
 <section class={Styles['hero']}>
@@ -12,7 +13,12 @@ const {content} = Astro.props;
           <h1 class={Styles["heading-hero"]} set:html={content.hero}></h1>
 
           <div class={Styles['image__container']}>
-            <img class={Styles['hero__image']} id="image" src="/franks-7.jpg" alt="this is a image"/>
+            <img 
+              loading='lazy' 
+              class={Styles['hero__image']} 
+              id="image" 
+              src="/franks-7.jpg" 
+              alt="this is a image"/>
           </div>
           
           <button class="button">
