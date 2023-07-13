@@ -1,13 +1,8 @@
 let images = [
-    '/franks-1.jpg',
-    '/franks-2.jpg',
-    '/franks-3.jpg',
-    '/franks-4.jpg',
-    '/franks-5.jpg',
-    '/franks-6.jpg',
+    '/franks-16.jpg',
+    '/franks-11.jpg',
     '/franks-7.jpg',
-    '/franks-8.jpg',
-    '/franks-9.jpg',
+
 ];
 
 let index = 0;
@@ -19,6 +14,6 @@ function change() {
 }
 
 window.onload = function () {
-    setInterval(change, 5000);
+    setInterval(change, 3000);
 };
 

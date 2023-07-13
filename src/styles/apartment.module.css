@@ -24,6 +24,10 @@ html {
     padding: 15px 0px;
    
 }
+.apartment p {
+    width: 80%;
+    font-size: 1.2rem;
+}
 
 .room__container {
   
