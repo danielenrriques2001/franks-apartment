@@ -33,6 +33,10 @@ const recommendations = [
 		font-size: 2.8em;
 	}
 
+	p {
+		font-size: larger;
+	}
+
 	.main {
 		display: flex;			
 		flex-direction: column;
@@ -103,8 +107,6 @@ const recommendations = [
 	}
 
 
-
-
 </style>
 
 	<Layout pageTitle = {'Prenzlauer Berg'}>
@@ -131,7 +133,7 @@ const recommendations = [
 					{
 					recommendations.map((item) => (
 					<div class="item__container">
-						<img src={ '/recommendations' + item.icon} alt="food foto">
+						<img loading="lazy" src={ '/recommendations' + item.icon} alt="food foto">
 						<p>{item.name}</p>
 					</div>
 					))

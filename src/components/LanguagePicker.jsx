@@ -27,16 +27,15 @@ const LanguagePicker = () => {
       setPage(getPageName(window.location) )
       setLang(getLangFromUrl(window.location))
   }, [page, lang])
-  
+
+
   return (
     <div>
-      <img  
-          src={`/languages/${lang}.png`} 
-          alt={`This is the logo for the language: '`}
-          width="45px"
+      <p className='languagePicker__icon'
           onClick={() => handleChangeLanguage()}
-          style={{cursor: 'pointer', margin: '0'}}
-      />
+      >
+        {lang === 'de' ? 'en' : 'de'}
+      </p>
     </div>
   )
 }

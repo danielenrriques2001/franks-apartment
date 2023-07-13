@@ -7,9 +7,7 @@ const { name, description, images } = Astro.props
 
     
     <h2 class={Styles['apartment__name']}>{name}</h2>
-    <p>
-       {description}
-    </p>
+    <p set:html={description}></p>
     <div class={Styles["room__container--images"]}>
 
         {

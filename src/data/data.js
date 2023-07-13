@@ -1,34 +1,31 @@
 export const arrayImages = [
     '/franks-1', 
-    '/franks-2', 
-    '/franks-3', 
-    '/franks-4', 
-    '/franks-5', 
-    '/franks-6', 
+    '/franks-9', 
+    '/franks-10', 
+    '/franks-11', 
+    '/franks-14', 
+    '/franks-12', 
     '/franks-7', 
-    '/franks-8',
-     '/franks-9', 
-     '/franks-10', 
-     '/franks-11', 
-     '/franks-12', 
-     '/franks-13', 
-     '/franks-14', 
-     '/franks-15'
+    '/franks-6', 
+   
+     '/franks-3', 
+    '/franks-4', 
+    
 ];
 
 
 export const heroContent = {
     de:{ 
-        hero: `Finde dein <span>Zuhause</span> in unserem Kiez!`,
+        hero: `Dein <span>Zuhause</span> in unserem Kiez!`,
         button: 'Verfügbarkeit prüfen'},
     en: {
-        hero: `Find your <span>Home</span> in our Kiez!`,
+        hero: `Your <span>Home</span> in our Kiez!`,
         button: 'Check Availability'}
 }
 
 export const descriptionContent = {
     de: {
-        heading: `Willkommen bei frank’s apartment in <span>Prenzlauer Berg.</span>`,
+        heading: `Willkommen bei franks apartment in <span>Prenzlauer Berg.</span>`,
 
         description: `Auf 70m² findet Ihr ausreichend Platz für bis zu vier Personen. Das liebevoll eingerichtete Apartment ist komplett für Selbstversorger ausgestattet und hat allen Komfort.`,
 
@@ -36,7 +33,7 @@ export const descriptionContent = {
     },
 
     en: {
-        heading: `Welcome to frank's Apartment in <span>Prenzlauer Berg.</span>`,
+        heading: `Welcome to franks Apartment in <span>Prenzlauer Berg.</span>`,
 
         description: `On 70m² you will find enough space for up to four people. The lovingly furnished flat is fully equipped for self-catering and has all the comforts.`,
         
@@ -46,40 +43,41 @@ export const descriptionContent = {
 
 export const footerContent = {
     de: {
-        para: `Franks Apartment | Frank Hüllmandel | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/de/anfahrt'>Anfahrt</a> | <a href='/de/impressum'>Impressum</a>`,
+        para: `Franks Apartment | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/de/anfahrt'>Anfahrt</a> | <a href='/de/impressum'>Impressum</a>`,
     },
-    en: { para: `Franks Apartment | Frank Hüllmandel | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/en/anfahrt'>Directions</a> | <a href='/en/impressum'>Imprint</a>`},
+    en: { para: `Franks Apartment  | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/en/anfahrt'>Directions</a> | <a href='/en/impressum'>Imprint</a>`},
 }
 
 export const apartmentContent = [
     {
 
     de: {
-        name: 'Wohnraüme', 
-        description: 'Die hohen Stuckdecken und gepflegten Holzfußböden in den Wohn- und Schlafräumen sorgen für eine freundliche Atmosphäre und sind mit einer weiten Flügeltür verbunden.Neben dem komfortablen Doppelbett im Schlafzimmer steht Euch ein bequemes Schlafsofa für zwei Personen im Wohnzimmer zur Verfügung', 
+        name: 'Wohnräume', 
+        description: `Die hohen Stuckdecken und gepflegten Holzfußböden in den Wohn- und Schlafräumen sorgen für eine freundliche Atmosphäre und sind mit einer weiten Flügeltür verbunden.
+        Neben dem komfortablen Doppelbett im Schlafzimmer steht Euch ein bequemes Schlafsofa für zwei Personen im Wohnzimmer zur Verfügung.`, 
         
-        images: ['/franks-8.jpg', '/franks-10.jpg', '/franks-9.jpg'] 
+        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-17.jpg'] 
     },
     en: {
 
         name:" Living & Bedroom ",
         description: "The high stucco ceilings and well-maintained wooden floor in the living room and bedroom provide a friendly atmosphere and are connected with wide double wing doors. Bed sheets are provided.",
-        images: ['/franks-8.jpg', '/franks-10.jpg', '/franks-9.jpg'] 
+        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-17.jpg'] 
     }
     },
     {
     
     de: {
         name: 'Küche', 
-        description: 'Die Küche mit Spüle, Herd, Geschirrspüler und Kühlschrank ist komplett für Selbstversorger ausgestattet. Die Basics Kaffee,Tee, Kakao, Müsli und Gewürze sind inklusiv.', 
+        description: 'Die Küche mit Spüle, Herd, Geschirrspüler und Kühlschrank ist komplett für Selbstversorger ausgestattet. <br/> Die Basics Kaffee,Tee, Kakao, Müsli und Gewürze sind inklusive.', 
         
-        images: ['/franks-5.jpg', '/franks-6.jpg', '/franks-7.jpg'] 
+        images: ['/franks-7.jpg', '/franks-6.jpg', '/franks-5.jpg'] 
     },
     en: {
         name: 'Kitchen', 
         description: 'The kitchen, with sink, gas stovetop, electric oven and refrigerator, is completely furnished for self-catering. The basics coffee, tea, cocoa, muesli and spices are provided.', 
         
-        images: ['/franks-5.jpg', '/franks-6.jpg', '/franks-7.jpg'] 
+        images: ['/franks-7.jpg', '/franks-6.jpg', '/franks-5.jpg'] 
     },
 
     },
@@ -93,7 +91,7 @@ export const apartmentContent = [
         en: {
             name: "Bathroom",
             description: "The modern bathroom is newly tiled and equipped with shower, toilet and washing machine. Towels are provided for you.",
-            images: ['/franks-2', '/franks-3', '/franks-4'],
+            images: ['/franks-2.jpg','/franks-3.jpg', '/franks-4.jpg'],
         },
     },
  ]

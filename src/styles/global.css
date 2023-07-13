@@ -81,7 +81,7 @@ html, body {
 }
 
 .heading, h1, h2, h3{
-  font-family: 'Marmelad', sans-serif;
+    font-family: 'Marmelad', sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--First-Color);
@@ -308,7 +308,7 @@ a, li {
   .container_flex {
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: center;
     align-items: center;
     gap: 2px;
    
@@ -317,8 +317,9 @@ a, li {
   @media (min-width: 769px) {
     .container_flex {
       flex-direction: row;
-      
-      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
     }
   }
   
@@ -353,4 +354,28 @@ a, li {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+}
+
+/*Langauge Picker*/
+
+.languagePicker__icon {
+  font-size: 1.5rem;
+  color: var(--Heading-Color);
+  border: 1px solid var(--Heading-Color);
+ 
+  padding: 2px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'Marmelad', sans-serif;
+  transition: .3s ease-in-out all;
+  text-transform: uppercase;
+}
+
+.languagePicker__icon:hover {
+   cursor: pointer;
+   color: var(--First-Color);
+   background-color: rgb(248, 244, 244);
+   border: none;
 }
