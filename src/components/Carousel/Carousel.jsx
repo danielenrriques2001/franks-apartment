@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Modal from '../Modal'
 import {arrayImages} from '../../data/data'
 import LightGallery from 'lightgallery/react';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
 import Styles from '../../styles/carousel.module.css'
@@ -66,7 +67,6 @@ const Carousel = () => {
                 <a 
                   key={key} 
                   className={Styles.media__Element}
-                  rel='prefetch'
                   href={`../${image}.jpg`}
                
                   >
@@ -74,7 +74,7 @@ const Carousel = () => {
                       className={`${Styles.media__Image}`} 
                       src={`../${image}.jpg`} 
                       alt={`this is a image from ${image}`} 
-                      loading='lazy'
+                     
                       > 
                   </img>
                 </a>

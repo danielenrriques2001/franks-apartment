@@ -54,8 +54,8 @@
 
 .image__container {
   
-  width: 30rem;
-  height: 25rem;
+  width: 120%;
+  height: auto;
   border-radius: 15px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background-color: white;
@@ -78,11 +78,7 @@
   width: 100%;
   border-radius: 25px;
   
-
-
 }
-
-
 
 .hero__image:hover {
   cursor: pointer;
