@@ -1,18 +1,18 @@
 ---
-import Styles from  '../styles/apartment.module.css'
+import '../styles/apartment.css'
 const { name, description, images } = Astro.props
 
 ---
-<div class={Styles["room__container"]}>
+<div class='room__container'>
 
     
-    <h2 class={Styles['apartment__name']}>{name}</h2>
+    <h2 class='apartment__name'>{name}</h2>
     <p set:html={description}></p>
-    <div class={Styles["room__container--images"]}>
+    <div class='room__container--images'>
 
         {
             images.map((item) => (
-            <div class={Styles["images__container"]} >
+            <div class='images__container'>
                 <img loading="lazy" src={item} alt="wohnraum foto">
             </div>
             ))

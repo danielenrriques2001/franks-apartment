@@ -29,7 +29,7 @@ export const descriptionContent = {
 
         description: `Auf 70m² findet Ihr ausreichend Platz für bis zu vier Personen. Das liebevoll eingerichtete Apartment ist komplett für Selbstversorger ausgestattet und hat allen Komfort.`,
 
-        massage: `Für Euer Wohlbefinden bietet Euch Frank <span><a href="/de/massage">Massagen</a></span> direkt im Haus an.`,
+        massage: `Für Euer Wohlbefinden bietet Euch Frank <span><a href="/">Massagen</a></span> direkt im Haus an.`,
     },
 
     en: {
@@ -37,7 +37,7 @@ export const descriptionContent = {
 
         description: `On 70m² you will find enough space for up to four people. The lovingly furnished flat is fully equipped for self-catering and has all the comforts.`,
         
-        massage: `For your well-being, Frank offers you <span><a href="/en/massage">Massages</a></span> directly in the house.`,
+        massage: `For your well-being, Frank offers you <span><a href="/">Massages</a></span> directly in the house.`,
     }
 }
 

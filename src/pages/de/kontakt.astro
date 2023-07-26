@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layout/Layout.astro";
 import Map from "../../components/Map.astro";
-import Styles from "../../styles/contact.module.css";
+import "../../styles/contact.css";
 
 import {ContactContent} from '../../data/data.js'
 import { getLangFromUrl } from '../../utils/functions';
@@ -12,7 +12,7 @@ const lang = getLangFromUrl(Astro.url);
 
 	<Layout pageTitle = {'Buchungen'} >
 		<div class="container__grid">
-			<main class={Styles['main']}>
+			<main class='main'>
 				<h1>{ContactContent[lang]?.heading}</h1>
 				<div class="container">
 
