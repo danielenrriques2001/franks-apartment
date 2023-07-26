@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layout/Layout.astro";
 import Styles from "../../styles/apartment.module.css";
-import Apartment from "../../components/Apartment.astro";
+import ApartmentItem from "../../components/ApartmentItem.astro";
 
 import { apartmentContent } from '../../data/data.js'
 
@@ -16,7 +16,7 @@ const lang = getLangFromUrl(Astro.url);
 
 			{
 				apartmentContent.map((apartment) => 	(
-					<Apartment
+					<ApartmentItem
 						name = {apartment[lang]?.name}
 						description = {apartment[lang]?.description}
 						images = {apartment[lang]?.images}

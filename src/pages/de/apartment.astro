@@ -1,7 +1,8 @@
 ---
+import "../../styles/apartment.css";
+
 import Layout from "../../layout/Layout.astro";
-import Styles from "../../styles/apartment.module.css";
-import Apartment  from "../../components/Apartment.astro";
+import ApartmentItem  from "../../components/ApartmentItem.astro";
 import { apartmentContent } from '../../data/data.js'
 import { getLangFromUrl, useTranslations } from '../../utils/functions';
 
@@ -15,11 +16,11 @@ const t = useTranslations(lang);
 ---	
 
 	<Layout pageTitle = {'Apartment'}>
-		<main class={Styles['apartment']}>
+		<main class='apartment'>
 			{
 				apartmentContent.map((apartment) => 	(
 					
-					<Apartment
+					<ApartmentItem
 						name = {apartment[lang]?.name}
 						description = {apartment[lang]?.description}
 						images = {apartment[lang]?.images}
