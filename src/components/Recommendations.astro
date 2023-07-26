@@ -1,0 +1,26 @@
+---
+import '../styles/prenzlauer.css'
+
+import { recommendationsPrenzlauerBerg } from "../data/data";
+
+const {heading} = Astro.props;
+---
+
+<section class="recommendations">
+    <h2 >{heading}</h2>
+
+    <div class="items__container">	
+
+    {
+        recommendationsPrenzlauerBerg.map((item) => (
+        <div class="item__container">
+            <img loading="lazy" src={`/recommendations${item.icon}`} alt="food foto">
+            <p>{item.name}</p>
+        </div>
+        ))
+
+        }
+
+    </div>
+
+</section>

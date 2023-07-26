@@ -202,3 +202,14 @@ export const PrenzlauerContent = {
         heading: 'Our recommendations'
     }
 }
+
+export const imagesPrenzlauerBerg = ['franks-16', 'franks-17', 'franks-18', 'franks-19'];
+
+export const recommendationsPrenzlauerBerg = [
+	{name: 'NEO 1', icon: '/food.png'},
+	{name: 'Café Dodo Coffee & Gelato', icon: '/eis.png'},
+	{name: 'Cafe Bäckerei Özzy', icon: '/bakery.png'},
+	{name: 'Bu Kon', icon: '/food.png'},
+	{name: 'Zweistrom', icon: '/street-food.png'},
+]
+
