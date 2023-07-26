@@ -1,19 +1,17 @@
 ---
 import Carousel from '../components/Carousel/Carousel'
-
-import '../styles/global.css'
-import Styles from '../styles/description.module.css'
+import  '../styles/description.css'
 
 const {content} = Astro.props;
 
 ---
-<section class={Styles.appartment}>
+<section class="apartment">
     <h1 set:html={content.heading}></h1>
     <p set:html={content.description}></p>
     <div>
         <Carousel client:only/>
     </div>
-    <div class={Styles.massage}>
+    <div class='massage'>
         <p set:html={content.massage}></p>
        
     </div>

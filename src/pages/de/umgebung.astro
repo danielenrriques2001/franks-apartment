@@ -22,9 +22,11 @@ const lang = getLangFromUrl(Astro.url);
 			<div class="images__container">
 				 {
 					imagesPrenzlauerBerg.map((item) => (
-					<div class="img__container">
-						<img src={`/around/${item}.jpg`} alt="wohnraum foto">
-					</div>
+					<>
+						<div class="img__container">
+							<img src={`/around/${item}.jpg`} alt="wohnraum foto">
+						</div>
+					</>
 					))
 				}
 				

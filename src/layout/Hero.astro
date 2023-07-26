@@ -1,21 +1,21 @@
 ---
-import Styles from '../styles/hero.module.css'
+import '../styles/hero.css'
 const {content} = Astro.props;
 
 ---
 
-<section class={Styles['hero']}>
-    <div class={Styles["hero-container"]}>
+<section class="hero">
+    <div class="hero-container">
 
        
 
-        <div class={Styles['container']}>
-          <h1 class={Styles["heading-hero"]} set:html={content.hero}></h1>
+        <div class="hero__container">
+          <h1 class="heading__hero" set:html={content.hero}></h1>
 
-          <div class={Styles['image__container']}>
+          <div class="image__container" >
             <img 
+              class="hero__image"
               loading='lazy' 
-              class={Styles['hero__image']} 
               id="image" 
               src="/franks-1.jpg" 
               alt="this is a image"/>
