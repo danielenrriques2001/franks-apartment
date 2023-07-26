@@ -1,12 +1,19 @@
 ---
 import { getLangFromUrl } from '../utils/functions.js';
+
 const lang = getLangFromUrl(Astro.url);
+
+const CONTACT = {
+    de: {name: 'Kontakt'},
+    en: {name: 'Contact'}
+}
+
 ---
 
-    <ul class="menu">
+<ul class="menu">
         <li><a rel="prefetch" class="menuItem" href="apartment">Apartment</a></li>
         <li><a rel="prefetch" class="menuItem" href="umgebung">Prenzlauer Berg</a></li>
-        <li><a rel="prefetch" class="menuItem" href="kontakt">{lang === 'de' ? 'Kontakt' : 'Contact'}</a></li>
+        <li><a rel="prefetch" class="menuItem" href="kontakt">{CONTACT[lang]?.name}</a></li>
   </ul>
 
 

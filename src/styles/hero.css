@@ -1,33 +1,30 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 
 .hero {
   width: 100%;
   height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat ;
-  background-size: cover;
   padding-top: 5rem;
   background-color: rgb(232,218,218);
   padding-bottom: 5rem;
-}
 
-.container {
-  width: 70%;
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero__container {
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 
-.heading-hero {
-    width: fit-content;
+.heading__hero {
+  
     line-height: 0.80;
     padding: 15px;
-    font-family: 'Marmelad', sans-serif;
     border-radius: 15px;
     font-weight: 700;
     text-align: left;
@@ -37,29 +34,25 @@
 }
 
 
-.heading-hero span {
+.heading__hero span {
     color: var(--First-Color);
     font-weight: 800;
-    display: block;
+    display: inline;
     background: -webkit-linear-gradient(var(--First-Color), var(--Second-Color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-@media (min-width: 769px) {
-  .heading-hero span {
-    display: inline;
-  }
-}
+
 
 .image__container {
   
-  width: 120%;
+  width: 90%;
   height: auto;
   border-radius: 15px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  background-color: white;
-  
+  background-color: white;  
+  margin: 0 auto;
 }
 
 @media (min-width: 769px) {

@@ -7,7 +7,7 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 	<Layout pageTitle = {'Prenzlauer Berg'}>
-		<main>
+		<main class="info">
 
 			<h1>{AnfahrtContent[lang]?.title}</h1>
 			<p set:html={AnfahrtContent[lang]?.content}></p>
@@ -16,16 +16,8 @@ const lang = getLangFromUrl(Astro.url);
 	</Layout>
 
 	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
+		
 
-		main {
-			
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			min-height: calc(80vh - 40px);
-			font-family: 'Marmelad', sans-serif;
-		}
+
 
 	</style>

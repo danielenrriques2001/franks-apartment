@@ -1,0 +1,14 @@
+
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+.map__element {
+    margin: 0;
+    
+}

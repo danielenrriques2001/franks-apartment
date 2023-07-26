@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layout/Layout.astro";
 import Styles from "../../styles/apartment.module.css";
-import Apartment from "../../components/Apartment.astro";
+import Apartment  from "../../components/Apartment.astro";
 import { apartmentContent } from '../../data/data.js'
 import { getLangFromUrl, useTranslations } from '../../utils/functions';
 
@@ -16,14 +16,6 @@ const t = useTranslations(lang);
 
 	<Layout pageTitle = {'Apartment'}>
 		<main class={Styles['apartment']}>
-            <!-- <h1>UNSERE WOHNUNG</h1>
-
-			<div class="apartment_Container">
-				<a href="#wohnraum">Wohnräume</a>
-				<a href="#küche">Küche</a>
-				<a href="#bad">Bad</a>
-				
-			</div> -->
 			{
 				apartmentContent.map((apartment) => 	(
 					
