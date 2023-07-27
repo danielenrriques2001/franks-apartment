@@ -1,19 +1,12 @@
 
-
-html {
-    scroll-behavior: smooth;
-}
-
 .apartment {
     margin-bottom: 2rem;
     color: #373434;
-    min-height: calc(100% - 40px)
-
+    min-height: calc(100% - 40px);
 }
 .apartment__name {
     line-height: 0.80;
     padding: 15px;
-    font-family: 'Marmelad', sans-serif;
     border-radius: 15px;
     font-weight: 700;
     text-align: left;

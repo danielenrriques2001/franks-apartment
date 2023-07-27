@@ -1,10 +1,9 @@
 ---
 import Layout from "../../layout/Layout.astro";
-import Styles from "../../styles/contact.module.css";
 import Map from "../../components/Map.astro";
+import "../../styles/contact.css";
 
 import {ContactContent} from '../../data/data.js'
-
 import { getLangFromUrl } from '../../utils/functions';
 
 const lang = getLangFromUrl(Astro.url);
@@ -13,43 +12,45 @@ const lang = getLangFromUrl(Astro.url);
 
 	<Layout pageTitle = {'Buchungen'} >
 		<div class="container__grid">
+			<main class='main'>
+				<h1>{ContactContent[lang]?.heading}</h1>
+				<div class="container">
 
+					<div>
+						<h2>{ContactContent[lang]?.emailHeading}:</h2>
+						<p>{ContactContent[lang]?.email}</p>
 		
-		<main class={Styles['main']}>
-			<h1>{ContactContent[lang]?.heading}</h1>
-			<div class="container">
-
+					</div>
+	
 				<div>
-					<h2>{ContactContent[lang]?.emailHeading}:</h2>
-					<p>{ContactContent[lang]?.email}</p>
+					
+					<h2>{ContactContent[lang]?.adresse}:</h2>
+	
+					<p>
+						franks apartment
+						Frank Hüllmandel
+						Dunckerstrasse 80A
+						10437 Berlin - Germany
+					</p>
+					
 				</div>
+				<div>
+					<h2>{ContactContent[lang]?.Telefon}:</h2>
+					<p>{ContactContent[lang]?.MobilInfo}</p>
+	
+				</div>
+	
 
-			<div>
+	
 				
-				<h2>{ContactContent[lang]?.adresse}:</h2>
+	
+				</div>
+			   
+			</main>
+			<aside>
+				<Map/>
+			</aside>
 
-				<p>
-					franks apartment
-					Frank Hüllmandel
-					Dunckerstrasse 80A
-					10437 Berlin - Germany
-				</p>
-				
-			</div>
-			<div>
-				<h2>{ContactContent[lang]?.Telefon}:</h2>
-				<p>{ContactContent[lang]?.MobilInfo}</p>
-
-			</div>
-
-
-
-			</div>
-            
-			
-		</main>
-		<aside>
-			<Map/>
-		</aside>
-	</div>
+		</div>
+		
 	</Layout>
