@@ -1,9 +1,12 @@
 import { useState } from 'react'
-import {arrayImages} from '../../data/data'
 
+//Data
+import {arrayImages} from '../data/data'
 
-import Styles from '../../styles/carousel.module.css'
+//Styles
+import  '../styles/carousel.css'
 
+//External Gallery's Library
 import LightGallery from 'lightgallery/react';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
@@ -23,18 +26,18 @@ const Carousel = () => {
             
                 speed={500}
                 plugins={[lgThumbnail, lgZoom]}
-                elementClassNames={`${Styles.media__scroller} ${Styles.snaps__Inline}`}
+                elementClassNames={`media__scroller snaps__Inline`}
                 
             >         
               {arrayImages.map((image, key) => (
                 <a 
                   key={key} 
-                  className={Styles.media__Element}
+                  className='media__Element'
                   href={`../${image}.jpg`}
                
                   >
                   <img 
-                      className={`${Styles.media__Image}`} 
+                      className='media__Image' 
                       src={`../${image}.jpg`} 
                       alt={`this is a image from ${image}`} 
                      
