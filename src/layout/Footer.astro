@@ -1,7 +1,6 @@
 ---
 
 import { getLangFromUrl, useTranslations } from '../utils/functions.js';
-import {footerContent} from '../data/data.js'
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -10,5 +9,5 @@ const t = useTranslations(lang);
 ---
 
 <footer class="footer">
-    <p class="footer__para" set:html={footerContent[lang]?.para}></p>
+    <p class="footer__para" set:html={t('footer')}></p>
 </footer>

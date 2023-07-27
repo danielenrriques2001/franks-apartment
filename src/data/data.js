@@ -14,15 +14,6 @@ export const arrayImages = [
 ];
 
 
-export const heroContent = {
-    de:{ 
-        hero: `Dein <span>Zuhause</span> in unserem Kiez!`,
-        button: 'Verfügbarkeit prüfen'},
-    en: {
-        hero: `Your <span>Home</span> in our Kiez!`,
-        button: 'Check Availability'}
-}
-
 export const descriptionContent = {
     de: {
         heading: `Willkommen bei franks apartment in <span>Prenzlauer Berg.</span>`,
@@ -42,10 +33,9 @@ export const descriptionContent = {
 }
 
 export const footerContent = {
-    de: {
-        para: `Franks Apartment | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/de/anfahrt'>Anfahrt</a> | <a href='/de/impressum'>Impressum</a>`,
-    },
-    en: { para: `Franks Apartment  | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/en/anfahrt'>Directions</a> | <a href='/en/impressum'>Imprint</a>`},
+    de: `Franks Apartment | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/de/anfahrt'>Anfahrt</a> | <a href='/de/impressum'>Impressum</a>`,
+
+    en:`Franks Apartment  | Whatsapp: +49 (0) 177 299 5212 | E-Mail: info@franksberlin.com | <a href='/en/anfahrt'>Directions</a> | <a href='/en/impressum'>Imprint</a>`,
 }
 
 export const apartmentContent = [
