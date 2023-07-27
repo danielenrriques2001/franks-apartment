@@ -16,3 +16,16 @@ export function getPageName(url: URL) {
   const [, , name] = url.pathname.split('/');
   return name;
 }
+
+export const changeLanguage = (lang: string, page?: string): void => {
+   
+  let url;
+
+  if(lang === 'de') {
+    url = `en/${page || ''}`
+  } else {
+    url = `de/${page || ''}`
+  }
+
+  window.location.pathname = url;
+} 

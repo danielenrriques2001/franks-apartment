@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import {getLangFromUrl, getPageName} from '../utils/functions'
-import { languages } from '../utils/ui';
+import {getLangFromUrl, getPageName, changeLanguage} from '../utils/functions'
 import { useEffect } from 'react';
 
 const LanguagePicker = () => {
@@ -8,19 +7,7 @@ const LanguagePicker = () => {
   const [page, setPage] = useState('');
   const [lang, setLang] = useState('');
 
-  const handleChangeLanguage = () => {
-   
-    let url;
-
-    if(lang === 'de') {
-      url = `en/${page || ''}`
-    } else {
-      url = `de/${page || ''}`
-    }
-
-    window.location.pathname = url;
-  } 
-
+  
 
 
   useEffect(() => {
@@ -31,8 +18,9 @@ const LanguagePicker = () => {
 
   return (
     <div>
-      <p className='languagePicker__icon'
-          onClick={() => handleChangeLanguage()}
+      <p 
+          className='languagePicker__icon'
+          onClick={() => changeLanguage(lang, page)}
       >
         {lang === 'de' ? 'en' : 'de'}
       </p>
