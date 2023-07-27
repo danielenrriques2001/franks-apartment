@@ -1,7 +1,8 @@
 ---
-import { getLangFromUrl } from '../utils/functions.js';
+import { getLangFromUrl, useTranslations } from '../utils/functions.js';
 
 const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang)
 
 const CONTACT = {
     de: {name: 'Kontakt'},
@@ -11,9 +12,9 @@ const CONTACT = {
 ---
 
 <ul class="menu">
-        <li><a rel="prefetch" class="menuItem" href="apartment">Apartment</a></li>
-        <li><a rel="prefetch" class="menuItem" href="umgebung">Prenzlauer Berg</a></li>
-        <li><a rel="prefetch" class="menuItem" href="kontakt">{CONTACT[lang]?.name}</a></li>
+        <li><a rel="prefetch" class="menuItem" href="apartment">{t('nav.apartment')}</a></li>
+        <li><a rel="prefetch" class="menuItem" href="umgebung">{t('nav.prenzlauerBerg')}</a></li>
+        <li><a rel="prefetch" class="menuItem" href="kontakt">{t('nav.kontakt')}</a></li>
   </ul>
 
 
