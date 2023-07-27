@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import {arrayImages} from '../../data/data'
+import {arrayImages} from '../data/data'
 
 
-import Styles from '../../styles/carousel.module.css'
+import Styles from '../styles/carousel.module.css'
 
 import LightGallery from 'lightgallery/react';
 import 'lightgallery/css/lightgallery.css';
