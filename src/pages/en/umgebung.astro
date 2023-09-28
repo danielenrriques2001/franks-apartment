@@ -4,7 +4,8 @@ import Layout from "../../layout/Layout.astro";
 import { getLangFromUrl } from "../../utils/functions";
 import { 
 	PrenzlauerContent, 
-	imagesPrenzlauerBerg, 
+	imagesPrenzlauerBerg,
+recommendationsPrenzlauerBerg, 
 } from "../../data/data";
 
 import Recommendations from '../../components/Recommendations.astro';
@@ -32,6 +33,7 @@ const lang = getLangFromUrl(Astro.url);
 				
 			</div>
 
+			<Recommendations heading="Recommendations"/>
 
 		</main>
 		
