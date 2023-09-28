@@ -14,8 +14,9 @@ const {heading} = Astro.props;
     {
         recommendationsPrenzlauerBerg.map((item) => (
         <div class="item__container">
-            <img loading="lazy" src={`/recommendations${item.icon}`} alt="food foto">
-            <p>{item.name}</p>
+            <img style="width: 5rem;" loading="lazy" src={`/recommendations${item?.icon}`} alt="food foto">
+            <a target="_blank" href={item?.link}><p>{item?.name}</p></a>
+            
         </div>
         ))
 

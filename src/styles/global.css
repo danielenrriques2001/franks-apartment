@@ -74,7 +74,7 @@ body {
 
 .footer__para {
         color: rgb(210, 205, 205);
-        text-transform: lowercase;
+        text-transform: unset;
     }
 
 

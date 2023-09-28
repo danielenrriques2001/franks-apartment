@@ -24,6 +24,7 @@
     padding: 5rem 5rem;
     
     background-color: rgb(232,218,218);
+    margin-bottom: 0px;
 }
 .images__container {
     display: flex;
@@ -56,20 +57,32 @@
 }
 
 .recommendations {
-    margin-top: 5rem;
+    margin: 5rem 5rem;
+    
 }
+.recommendations h2 {
+    text-transform: capitalize;
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 769px) {
+    .recommendations h2 {
+      padding-bottom: 0;
+    }
+}
+
 
 
 .items__container {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 @media (min-width: 769px) {
     .items__container {
         flex-direction: row;
-        margin-top: 2rem;
+        margin-top: 5rem;
         gap: 5rem;
     }
 }
