@@ -18,17 +18,17 @@ export const descriptionContent = {
     de: {
         heading: `Willkommen bei franks apartment in <span>Prenzlauer Berg.</span>`,
 
-        description: `Auf 70m² findet Ihr ausreichend Platz für bis zu vier Personen. Das liebevoll eingerichtete Apartment ist komplett für Selbstversorger ausgestattet und hat allen Komfort.`,
+        description: `Auf <strong>70m²</strong> findet Ihr ausreichend Platz für bis zu vier Personen. Das liebevoll eingerichtete Apartment ist komplett für Selbstversorger ausgestattet und hat allen Komfort.`,
 
-        massage: `Für Euer Wohlbefinden bietet Euch Frank <span><a href="/">Massagen</a></span> direkt im Haus an.`,
+        massage: `<span><a href="/">Jetzt buchen!</a></span>`,
     },
 
     en: {
         heading: `Welcome to franks Apartment in <span>Prenzlauer Berg.</span>`,
 
-        description: `On 70m² you will find enough space for up to four people. The lovingly furnished flat is fully equipped for self-catering and has all the comforts.`,
+        description: ` On <strong>70m²</strong> you will find enough space for up to four people. The lovingly furnished flat is fully equipped for self-catering and has all the comforts.`,
         
-        massage: `For your well-being, Frank offers you <span><a href="/">Massages</a></span> directly in the house.`,
+        massage: `<span><a href="/">Book Now!</a></span>`,
     }
 }
 
@@ -46,13 +46,13 @@ export const apartmentContent = [
         description: `Die hohen Stuckdecken und gepflegten Holzfußböden in den Wohn- und Schlafräumen sorgen für eine freundliche Atmosphäre und sind mit einer weiten Flügeltür verbunden.
         Neben dem komfortablen Doppelbett im Schlafzimmer steht Euch ein bequemes Schlafsofa für zwei Personen im Wohnzimmer zur Verfügung.`, 
         
-        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-17.jpg'] 
+        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-16.jpg'] 
     },
     en: {
 
         name:" Living & Bedroom ",
         description: "The high stucco ceilings and well-maintained wooden floor in the living room and bedroom provide a friendly atmosphere and are connected with wide double wing doors. Bed sheets are provided.",
-        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-17.jpg'] 
+        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-16.jpg'] 
     }
     },
     {
@@ -197,11 +197,12 @@ export const imagesPrenzlauerBerg = ['franks-16', 'franks-17', 'franks-18', 'fra
 
 export const recommendationsPrenzlauerBerg = [
     {name: 'Namida', icon: '/pizza.png', link: 'https://www.google.com/search?q=namida+prenzlauer+berg&oq=namida+prenzlauer+berg&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIRCAEQLhgNGBMYrwEYxwEYgAQyCggCEAAYhgMYigUyCggDEAAYhgMYigUyCggEEAAYhgMYigXSAQg1MTY4ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8#rlimm=12812666061261902094'},
-	{name: 'NEO 1', icon: '/food.png', link: 'https://www.google.com/search?q=neo+prenzlauer+berg&sca_esv=569142147&sxsrf=AM9HkKlnz4NplXGA9J_w1czlTUnsiFivGQ%3A1695905360535&ei=UHYVZbrYH87TkwWTpYmYAQ&oq=neo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA25lbyoCCAAyBxAjGIoFGCcyBxAjGIoFGCcyBxAjGIoFGCcyDRAuGIoFGMcBGK8BGEMyCxAAGIAEGLEDGIMBMggQABiABBixAzIJEAAYigUYChhDMgsQLhiABBjHARivATIFEC4YgAQyCBAuGIAEGLEDSJ83UPYrWL8tcAN4AZABAJgBtQGgAaQDqgEDMC4zuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBBAjGCfCAgcQABiKBRhDwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhiABBixAxjHARjRA8ICBxAuGIoFGEPCAg0QABiKBRixAxiDARhD4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp#rlimm=16960522655882771145'},
+	{name: 'NEO 1', icon: '/meal.png', link: 'https://www.google.com/search?q=neo+prenzlauer+berg&sca_esv=569142147&sxsrf=AM9HkKlnz4NplXGA9J_w1czlTUnsiFivGQ%3A1695905360535&ei=UHYVZbrYH87TkwWTpYmYAQ&oq=neo&gs_lp=Egxnd3Mtd2l6LXNlcnAiA25lbyoCCAAyBxAjGIoFGCcyBxAjGIoFGCcyBxAjGIoFGCcyDRAuGIoFGMcBGK8BGEMyCxAAGIAEGLEDGIMBMggQABiABBixAzIJEAAYigUYChhDMgsQLhiABBjHARivATIFEC4YgAQyCBAuGIAEGLEDSJ83UPYrWL8tcAN4AZABAJgBtQGgAaQDqgEDMC4zuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBBAjGCfCAgcQABiKBRhDwgIREC4YgAQYsQMYgwEYxwEY0QPCAg4QLhiABBixAxjHARjRA8ICBxAuGIoFGEPCAg0QABiKBRixAxiDARhD4gMEGAAgQYgGAZAGCA&sclient=gws-wiz-serp#rlimm=16960522655882771145'},
     {name: 'BuKon', icon: '/asian.png', link: 'https://www.google.com/search?q=buKon+prenzlauerberg&sca_esv=569142147&sxsrf=AM9HkKmMGsRYLF4nqX0mb6HjAFOBnmdBuw%3A1695905462363&ei=tnYVZcntFO6Ni-gPsvKaqA8&ved=0ahUKEwjJoJ-VrM2BAxXuxgIHHTK5BvUQ4dUDCBA&uact=5&oq=buKon+prenzlauerberg&gs_lp=Egxnd3Mtd2l6LXNlcnAiFGJ1S29uIHByZW56bGF1ZXJiZXJnMgcQIxiwAhgnSNEMUI8LWI8LcAJ4AZABAJgBVKABVKoBATG4AQPIAQD4AQHCAgoQABhHGNYEGLAD4gMEGAAgQYgGAZAGAg&sclient=gws-wiz-serp'},
 	{name: 'Café Boulangerie', icon: '/cafe.png', link: 'https://www.google.com/search?q=cafe+boulangerie+prenslauer+berg&sca_esv=569142147&sxsrf=AM9HkKlxmTenq8zt_kGmNYSqs307Ynduaw%3A1695905469695&ei=vXYVZf2HKpLtkgWdhaSIAQ&ved=0ahUKEwi92t-YrM2BAxWStqQKHZ0CCREQ4dUDCBA&uact=5&oq=cafe+boulangerie+prenslauer+berg&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGNhZmUgYm91bGFuZ2VyaWUgcHJlbnNsYXVlciBiZXJnMgcQIRigARgKMgcQIRigARgKMggQIRgWGB4YHTIIECEYFhgeGB0yCBAhGBYYHhgdSJJMUNcCWI5LcAV4BJABAJgBlwKgAbUhqgEGMS4yNy4xuAEDyAEA-AEBwgIEEAAYR8ICBxAjGIoFGCfCAgQQIxgnwgIIEAAYgAQYsQPCAhEQLhiABBixAxiDARjHARjRA8ICCxAuGIMBGLEDGIoFwgILEC4YgAQYsQMYgwHCAgsQABiKBRixAxiDAcICCxAAGIAEGLEDGIMBwgIJEAAYigUYChhDwgIREC4YgwEYxwEYsQMY0QMYgATCAg4QLhiABBixAxjHARjRA8ICCxAuGIoFGLEDGIMBwgIREC4YgAQYsQMYgwEYxwEYrwHCAgsQLhiABBjHARivAcICCBAAGIAEGJIDwgIIEAAYigUYkgPCAggQABiABBjJA8ICBRAAGIAEwgIREC4YigUYsQMYgwEYxwEYrwHCAgsQABjLARiABBjJA8ICDhAuGMsBGIAEGMcBGK8BwgIdEC4YywEYgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQHCAgoQLhixAxiABBgKwgILEC4YrwEYxwEYgATCAhkQLhixAxiABBgKGJcFGNwEGN4EGN8E2AEBwgILEAAYigUYkgMYuATCAgoQABiABBiSAxgKwgIOEC4YywEYgAQYxwEY0QPCAggQABjLARiABMICDRAuGIAEGMcBGK8BGArCAhAQLhiABBgUGIcCGMcBGK8BwgIREC4YgwEYrwEYxwEYsQMYgATCAhoQLhiABBjHARivARiXBRjcBBjeBBjgBNgBAcICChAAGIAEGBQYhwLCAgoQABjLARiABBgKwgINEC4YrwEYxwEYgAQYCsICBxAAGIAEGArCAhoQLhivARjHARiABBiXBRjcBBjeBBjgBNgBAcICEBAuGMsBGIAEGMcBGK8BGArCAggQABgWGB4YCsICBhAAGBYYHsICAhAmwgIFECEYoAHiAwQYACBBiAYBkAYCugYGCAEQARgU&sclient=gws-wiz-serp'},
-    {name: 'Bar Krüger', icon: '/bar2.png', link: 'https://www.google.com/search?q=bar+krueger+prenzlauer+berg&sca_esv=569142147&sxsrf=AM9HkKkvTTep2ctLiCfmiRoHxYcXvhNEfg%3A1695905511208&ei=53YVZf6iDIadkgWl_6agBQ&oq=bar+krueger+pre&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2JhciBrcnVlZ2VyIHByZSoCCAAyBRAhGKABMgUQIRigATIEECEYFUj6IVDiB1jvGnAAeAWQAQCYAZcBoAGvC6oBBDAuMTK4AQPIAQD4AQHCAgQQABhHwgIEECMYJ8ICBxAjGIoFGCfCAgcQABiKBRhDwgILEAAYgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICBRAuGIAEwgIIEC4YsQMYgATCAgsQLhiABBixAxiDAcICCxAAGIoFGLEDGIMBwgILEC4YigUYsQMYgwHCAg0QLhiKBRjHARivARgnwgINEC4YigUYxwEYrwEYQ8ICBRAAGIAEwgIIEC4YgAQYsQPCAgsQABiABBixAxiSA8ICCBAAGIAEGJIDwgIOEC4YrwEYxwEYsQMYgATCAgoQABiKBRjJAxhDwgIKEAAYgAQYFBiHAsICERAuGIMBGK8BGMcBGLEDGIAEwgIIEAAYywEYgATCAgsQLhiABBjHARivAcICBxAAGIAEGArCAg4QLhivARjHARjLARiABMICBxAAGA0YgATCAgkQABgNGIAEGArCAg0QLhgNGIAEGMcBGK8BwgIIEAAYFhgeGArCAgYQABgWGB7CAgIQJuIDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp'},
-	{name: 'Wohnzimmerbar', icon: '/bar.png', link: 'https://www.google.com/search?q=wohnzimmer+prenzlauer+berg&sca_esv=569142147&sxsrf=AM9HkKnuVNDrItDW7Tzdc2SXmTKTQMFldw%3A1695905533176&ei=_XYVZZaoCu6ui-gPpbKMyA8&gs_ssp=eJzj4tZP1zcsyS0oiS82MmC0UjWoMDFPtDBJSUuzMDU2TEmyNLQyqEhJNLU0NjMxNDVOtUxMNE70kirPz8iryszNTS1SKChKzavKSSwFMpNSi9IBxfgZkQ&oq=wohnzimmer+pren&gs_lp=Egxnd3Mtd2l6LXNlcnAiD3dvaG56aW1tZXIgcHJlbioCCAAyCxAuGIAEGMcBGK8BMgYQABgWGB4yAhAmMhoQLhiABBjHARivARiXBRjcBBjeBBjgBNgBAUijJVDEBljiH3ADeACQAQCYAZEBoAGMDqoBBDAuMTW4AQPIAQD4AQHCAggQABiiBBiwA8ICBBAjGCfCAgcQIxiKBRgnwgILEAAYgAQYsQMYgwHCAgUQABiABMICBxAAGIoFGEPCAg0QLhiKBRjHARivARhDwgINEC4YigUYsQMYgwEYQ8ICBxAuGIoFGEPCAg0QLhivARjHARiKBRhDwgINEAAYigUYsQMYgwEYQ8ICCxAAGIAEGJIDGLgEwgIIEAAYgAQYsQPCAgcQIxixAhgnwgIKEAAYgAQYsQMYCsICDRAAGIAEGLEDGIMBGArCAg0QABiABBixAxixAxgKwgIHEAAYgAQYCsICHBAuGK8BGMcBGIoFGEMYlwUY3AQY3gQY4ATYAQHCAhwQLhiKBRjHARivARhDGJcFGNwEGN4EGOAE2AEBwgIQEC4YgAQYFBiHAhjHARivAcICDRAuGIAEGMcBGK8BGArCAh8QLhiABBgUGIcCGMcBGK8BGJcFGNwEGN4EGOAE2AEBwgIIEAAYFhgeGAriAwQYASBBiAYBkAYDugYGCAEQARgU&sclient=gws-wiz-serp'},
+    {name: 'Bar Krüger', icon: '/bier.png', link: 'https://www.google.com/search?q=bar+krueger+prenzlauer+berg&sca_esv=569142147&sxsrf=AM9HkKkvTTep2ctLiCfmiRoHxYcXvhNEfg%3A1695905511208&ei=53YVZf6iDIadkgWl_6agBQ&oq=bar+krueger+pre&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2JhciBrcnVlZ2VyIHByZSoCCAAyBRAhGKABMgUQIRigATIEECEYFUj6IVDiB1jvGnAAeAWQAQCYAZcBoAGvC6oBBDAuMTK4AQPIAQD4AQHCAgQQABhHwgIEECMYJ8ICBxAjGIoFGCfCAgcQABiKBRhDwgILEAAYgAQYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICBRAuGIAEwgIIEC4YsQMYgATCAgsQLhiABBixAxiDAcICCxAAGIoFGLEDGIMBwgILEC4YigUYsQMYgwHCAg0QLhiKBRjHARivARgnwgINEC4YigUYxwEYrwEYQ8ICBRAAGIAEwgIIEC4YgAQYsQPCAgsQABiABBixAxiSA8ICCBAAGIAEGJIDwgIOEC4YrwEYxwEYsQMYgATCAgoQABiKBRjJAxhDwgIKEAAYgAQYFBiHAsICERAuGIMBGK8BGMcBGLEDGIAEwgIIEAAYywEYgATCAgsQLhiABBjHARivAcICBxAAGIAEGArCAg4QLhivARjHARjLARiABMICBxAAGA0YgATCAgkQABgNGIAEGArCAg0QLhgNGIAEGMcBGK8BwgIIEAAYFhgeGArCAgYQABgWGB7CAgIQJuIDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp'},
+	{name: 'Wohnzimmerbar', icon: '/martini.png', link: 'https://www.google.com/search?q=wohnzimmer+prenzlauer+berg&sca_esv=569142147&sxsrf=AM9HkKnuVNDrItDW7Tzdc2SXmTKTQMFldw%3A1695905533176&ei=_XYVZZaoCu6ui-gPpbKMyA8&gs_ssp=eJzj4tZP1zcsyS0oiS82MmC0UjWoMDFPtDBJSUuzMDU2TEmyNLQyqEhJNLU0NjMxNDVOtUxMNE70kirPz8iryszNTS1SKChKzavKSSwFMpNSi9IBxfgZkQ&oq=wohnzimmer+pren&gs_lp=Egxnd3Mtd2l6LXNlcnAiD3dvaG56aW1tZXIgcHJlbioCCAAyCxAuGIAEGMcBGK8BMgYQABgWGB4yAhAmMhoQLhiABBjHARivARiXBRjcBBjeBBjgBNgBAUijJVDEBljiH3ADeACQAQCYAZEBoAGMDqoBBDAuMTW4AQPIAQD4AQHCAggQABiiBBiwA8ICBBAjGCfCAgcQIxiKBRgnwgILEAAYgAQYsQMYgwHCAgUQABiABMICBxAAGIoFGEPCAg0QLhiKBRjHARivARhDwgINEC4YigUYsQMYgwEYQ8ICBxAuGIoFGEPCAg0QLhivARjHARiKBRhDwgINEAAYigUYsQMYgwEYQ8ICCxAAGIAEGJIDGLgEwgIIEAAYgAQYsQPCAgcQIxixAhgnwgIKEAAYgAQYsQMYCsICDRAAGIAEGLEDGIMBGArCAg0QABiABBixAxixAxgKwgIHEAAYgAQYCsICHBAuGK8BGMcBGIoFGEMYlwUY3AQY3gQY4ATYAQHCAhwQLhiKBRjHARivARhDGJcFGNwEGN4EGOAE2AEBwgIQEC4YgAQYFBiHAhjHARivAcICDRAuGIAEGMcBGK8BGArCAh8QLhiABBgUGIcCGMcBGK8BGJcFGNwEGN4EGOAE2AEBwgIIEAAYFhgeGAriAwQYASBBiAYBkAYDugYGCAEQARgU&sclient=gws-wiz-serp'},
+    {name: 'Schoemig Porzellan', icon: '/porcelain.png', link: "https://www.google.com/search?q=claudia+porselan&oq=claudia&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAuGIAEMgYIAhAjGCcyBwgDEC4YgAQyBwgEEC4YgAQyBwgFEC4YgAQyBwgGEC4YgAQyBwgHEC4YgAQyBwgIEC4YgAQyBwgJEAAYjwLSAQgxNjcxajBqNKgCALACAA&sourceid=chrome&ie=UTF-8"},
 	
 ]
 

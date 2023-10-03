@@ -53,6 +53,7 @@
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background-color: white;  
   margin: 0 auto;
+  padding: 1rem;
 }
 
 @media (min-width: 769px) {
@@ -61,19 +62,21 @@
     height: 35rem;
   }
 }
-.hero__image {
+.bg-div {
   display: block;
-  background-color: white;
   padding: 15px 15px 60px 15px;
-  transition: all .4s ease-in;
-  object-fit: cover;
+  transition: background-image 6s linear;
+  background-position: center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 30px;
+  background-image: url("../../franks-1.jpg")
+
   
 }
 
-.hero__image:hover {
+.bg-div:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
