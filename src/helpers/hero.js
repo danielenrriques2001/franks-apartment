@@ -8,8 +8,8 @@ let images = [
 
 let index = 0;
 const backgroundHero = document.querySelector('.bg-div');
-document.addEventListener("DOMContentLoaded", () => {
-    setInterval(FadeImage, 6000);
+document.addEventListener('DOMContentLoaded', () => {
+    setInterval(FadeImage, 4000);
 })
 
 // function change() {

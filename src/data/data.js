@@ -5,7 +5,7 @@ export const arrayImages = [
     '/franks-11', 
     '/franks-14', 
     '/franks-12', 
-    '/franks-7', 
+    '/franks-7',    
     '/franks-6', 
    
      '/franks-3', 
@@ -43,16 +43,20 @@ export const apartmentContent = [
 
     de: {
         name: 'Wohnräume', 
+        subname: 'Wohnzimmer | Schlafzimmer',
         description: `Die hohen Stuckdecken und gepflegten Holzfußböden in den Wohn- und Schlafräumen sorgen für eine freundliche Atmosphäre und sind mit einer weiten Flügeltür verbunden.
         Neben dem komfortablen Doppelbett im Schlafzimmer steht Euch ein bequemes Schlafsofa für zwei Personen im Wohnzimmer zur Verfügung.`, 
         
-        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-16.jpg'] 
+        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-16.jpg', '/franks-11.jpg', '/franks-14.jpg', 
+        '/franks-13.jpg' ] 
     },
     en: {
 
-        name:" Living & Bedroom ",
+        name:'Living Rooms',
+        subname: 'Parlour | Bedroom',
         description: "The high stucco ceilings and well-maintained wooden floor in the living room and bedroom provide a friendly atmosphere and are connected with wide double wing doors. Bed sheets are provided.",
-        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-16.jpg'] 
+        images: ['/franks-1.jpg', '/franks-9.jpg', '/franks-16.jpg' , '/franks-11.jpg', '/franks-14.jpg', 
+        '/franks-13.jpg' ] 
     }
     },
     {

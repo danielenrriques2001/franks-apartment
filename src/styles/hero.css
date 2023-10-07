@@ -18,6 +18,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center
 }
 
 
@@ -47,37 +49,41 @@
 
 .image__container {
   
-  width: 90%;
+  width: 80%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background-color: white;  
-  margin: 0 auto;
-  padding: 1rem;
+  padding: 2px;
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 @media (min-width: 769px) {
   .image__container {
     width: 45rem;
     height: 35rem;
+    padding: 5px;
   }
 }
-.bg-div {
+
+
+.image {
+  position: absolute;
+  overflow: hidden;
   display: block;
-  padding: 15px 15px 60px 15px;
-  transition: background-image 6s linear;
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 30px;
-  background-image: url("../../franks-1.jpg")
-
-  
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 1s ease;
+  opacity: 0;
+  border-radius: 15px;
 }
-
-.bg-div:hover {
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+.active {
+    opacity: 1;
 }
-

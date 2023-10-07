@@ -31,11 +31,11 @@
     padding: 5rem 0px;
 }
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
     .room__container {
         height: 100vh;
     }
-}
+} */
 .room__container:nth-of-type(odd) {
     background-color: rgb(232,218,218);
   
