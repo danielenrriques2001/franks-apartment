@@ -17,6 +17,7 @@ export const languages = {
       'nav.kontakt': 'Kontakt',
       'hero': {
         title: `Dein <span>Zuhause</span> in unserem Kiez!`,
+        subtitle: null,
         button: 'Verfügbarkeit prüfen',
       },
       'description': descriptionContent['de'],

@@ -1,12 +1,13 @@
 ---
 import '../styles/apartment.css'
-const { name, description, images } = Astro.props
+const { name, description, images, subname } = Astro.props
 
 ---
 <div class='room__container'>
 
     
     <h2 class='apartment__name'>{name}</h2>
+    {subname && <h2>{subname}</h2> }
     <p set:html={description}></p>
     <div class='room__container--images'>
 
