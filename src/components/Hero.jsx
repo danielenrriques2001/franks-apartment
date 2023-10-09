@@ -10,7 +10,7 @@ const images = [
 ];
 
 
-function HeroTwo({content}) {
+function Hero({content}) {
     const slidePresentationTime = 6000 // after how many ms slide will change - now 3s / 3000ms
     const [currentSlide, setCurrentSlide] = useState(0) // value and function to set currrent slide index
     let sliderInterval = useRef() // interval ref
@@ -57,4 +57,4 @@ function HeroTwo({content}) {
     }
     
     
-    export default HeroTwo;
+    export default Hero;

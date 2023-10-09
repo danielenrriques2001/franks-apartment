@@ -1,10 +1,9 @@
 ---
-import Hero from "../../layout/Hero.astro";
 import Layout from "../../layout/Layout.astro";
 import Description from "../../layout/Description.astro";
 import Calender from "../../components/Calender.jsx";
 import { getLangFromUrl, useTranslations } from '../../utils/functions';
-import HeroTwo from '../../components/Hero'
+import Hero from '../../components/Hero'
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
@@ -13,12 +12,10 @@ const t = useTranslations(lang);
 
 	<Layout pageTitle = {'Prenzlauer Berg'}>
 		<main>
-			<HeroTwo 
-				client:only
+			<Hero 
+				client:load
 				content={t('hero')}
 			/>
-
-	
 			<Description 
 				content = {t('description')}
 			/>
