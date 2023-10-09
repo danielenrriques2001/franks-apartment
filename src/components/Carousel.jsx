@@ -25,7 +25,7 @@ const Carousel = () => {
     <LightGallery
             
                 speed={500}
-                plugins={[lgThumbnail, lgZoom]}
+                plugins={[lgZoom]}
                 elementClassNames={`media__scroller snaps__Inline`}
                 
             >         
@@ -39,7 +39,7 @@ const Carousel = () => {
                   <img 
                       className='media__Image' 
                       src={`../${image}.jpg`} 
-                      alt={`this is a image from ${image}`} 
+                      alt={`frank's Apartment - Berlin, Prenzlauer Berg`} 
                      
                       > 
                   </img>
