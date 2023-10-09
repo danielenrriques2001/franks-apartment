@@ -207,7 +207,7 @@ a, li {
     background-position: 0 0;
     border: none;
     transition: all .3s ease-in-out;
-    width: calc(25rem - 100px);
+    width: calc(25rem - 80px);
     margin-top: 2.5rem;
 
 

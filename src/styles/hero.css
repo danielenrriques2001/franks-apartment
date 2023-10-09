@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 
   
 }
@@ -28,8 +29,9 @@
     font-weight: 700;
     text-align: left;
     color: rgb(40,40,40);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .hero__heading span {
@@ -44,7 +46,7 @@
 .image__container {
 
   width: 80%;
-  height: 20rem;
+  min-height: 15rem;
   position: relative;
   padding: 25px;
   display: flex;
