@@ -184,6 +184,7 @@ a, li {
 /**BUTTON**/
 
 .button {
+    z-index: 2;
     margin-top: 1rem;
     border-radius: 6px;
     box-sizing: border-box;
@@ -206,9 +207,9 @@ a, li {
     background-position: 0 0;
     border: none;
     transition: all .3s ease-in-out;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 1.5rem;
+    width: calc(25rem - 100px);
+    margin-top: 2.5rem;
+
 
     }
 
