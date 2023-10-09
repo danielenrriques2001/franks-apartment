@@ -27,35 +27,33 @@ function HeroTwo({content}) {
     })
     
     return (
-        <div className="hero">
-          <div className="hero-container">
-
-
-            <div className="hero__container">
-            <h1 className="heading__hero"  dangerouslySetInnerHTML={{__html: content.title}}></h1>
-                <div className="image__container">
-                {images.map((image, index) => (
-                <img
-                  id={index}
-                  key={index}
-                  className={index === currentSlide ? 'image active' : 'image'}
-                  src={image}
-                  style={{
-                    zIndex: `-${index + 1}`
-                  }}
-                />
-              ))}
-                    
-                </div>
-
-                <button className="button">
-            <a target="_blank" href="https://www.airbnb.de/rooms/267951?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&check_in=2023-07-30&check_out=2023-08-04&federated_search_id=ef7ac761-8ee3-437d-ba0e-02b9eaada7c8&source_impression_id=p3_1683204831_lmxtMCzJF6dLWSdK">{content.button}</a>
-          </button>
-
-            </div>
+      <div className="hero">
+        <div className="hero__content">
+          <h1 className="hero__heading" dangerouslySetInnerHTML={{
+            __html: content?.title
+          }}></h1>
+          <div className="image__container">
+            {images.map((image, index) => (
+              <img
+                id={index}
+                key={index}
+                className={index === currentSlide ? 'image active' : 'image'}
+                src={image}
+                style={{
+                  zIndex: `-${index + 1}`
+                }}
+              />
+            ))}
           </div>
+
+          <button className="button">
+            <a href={content.linkButton}>
+              {content.button}
+          </a>
+          </button>
         </div>
-      );
+      </div>
+    );
     }
     
     
