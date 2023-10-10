@@ -16,9 +16,23 @@
     padding: 15px 0px;
    
 }
+
+/*for mobile*/
+@media (max-width: 899px) {
+    .apartment__subname {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+}
 .apartment p {
-    width: 80%;
-    font-size: 1.2rem;
+    width: 95%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+@media (min-width: 899px) {
+    .apartment p {
+        width: 80%
+    }
 }
 
 .room__container {
