@@ -279,6 +279,9 @@ a, li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    margin: 0px;
+    padding: 0px;
    
   }
 
@@ -289,7 +292,7 @@ a, li {
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     transition: all .10s ease-in;
-    transition: transform .5s;
+    transition: transform .7s;
   }
 
 
@@ -297,7 +300,7 @@ a, li {
   .menuItem {
     font-weight: 100;
     font-size: 3rem;
-    transition: all .4s ease-in-out;
+    transition: all .7s ease-in-out;
     
   }
   

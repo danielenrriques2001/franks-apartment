@@ -7,7 +7,7 @@ const { name, description, images, subname } = Astro.props
 
     
     <h2 class='apartment__name'>{name}</h2>
-    {subname && <h2>{subname}</h2> }
+    {subname && <h2 class="apartment__subname">{subname}</h2> }
     <p set:html={description}></p>
     <div class='room__container--images'>
 

@@ -8,7 +8,7 @@
     flex-direction: column;
     margin-bottom: 2rem;
     min-height: calc(70vh - 40px);
-    padding: 5rem 5rem;
+    padding: 5rem 0rem;
    
 }
 .container {
