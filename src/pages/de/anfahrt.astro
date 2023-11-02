@@ -8,7 +8,6 @@ const lang = getLangFromUrl(Astro.url);
 
 	<Layout pageTitle = {'Prenzlauer Berg'}>
 		<main class="info">
-
 			<h1>{AnfahrtContent[lang]?.title}</h1>
 			<p set:html={AnfahrtContent[lang]?.content}></p>
 		

@@ -1,10 +1,8 @@
 import { useState} from "react";
-import Rodal from "rodal";
 
 
 import '../styles/hero.css'
-import 'rodal/lib/rodal.css';
-import Portrat from "./Portrat";
+import Portrat from "./Portrat"
 import BookingInfo from "./BookingInfo";
 
 function Hero({content}) {

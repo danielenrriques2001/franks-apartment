@@ -1,21 +1,17 @@
-import React from 'react'
-import Rodal from "rodal";
-
+import  Rodal from 'rodal'
 import '../styles/bookingInfo.css'
 import 'rodal/lib/rodal.css';
 
 
-
-
-
-function BookingInfo({open, setOpen, content}) {
+export default function BookingInfo({open, setOpen, content}) {
   return (
     <Rodal 
         className='rodal'
         height={600} 
         width={700}
         visible={open} 
-        onClose={() => setOpen(!open)}>
+        onClose={() => setOpen(!open)}
+    >
           <div className='main'>
             <h1>{content?.heading}</h1>
             <h2>{content?.secondHeading}</h2>
@@ -41,4 +37,3 @@ function BookingInfo({open, setOpen, content}) {
 
 
 
-export default BookingInfo
