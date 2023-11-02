@@ -2,19 +2,17 @@
 import Layout from "../../layout/Layout.astro";
 import {AnfahrtContent} from '../../data/data'
 import { getLangFromUrl } from '../../utils/functions';
-
+import Portrat from '../../components/Portrat'
 const lang = getLangFromUrl(Astro.url);
 ---
 
 	<Layout pageTitle = {'Prenzlauer Berg'}>
 		<main class="info">
-
 			<h1>{AnfahrtContent[lang]?.title}</h1>
 			<p set:html={AnfahrtContent[lang]?.content}></p>
 		
 		</main>
 	</Layout>
-
 	<style>
 		
 
