@@ -1,3 +1,9 @@
+
+const AIRBNB = "https://www.airbnb.de/rooms/267951?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&check_in=2023-07-30&check_out=2023-08-04&federated_search_id=ef7ac761-8ee3-437d-ba0e-02b9eaada7c8&source_impression_id=p3_1683204831_lmxtMCzJF6dLWSdK";
+const WHATSAPP = 'https://wa.me/491772995212';
+const TRIPADVISOR = 'https://www.tripadvisor.de/VacationRentalReview-g187323-d11795049-Stylish_apartment_in_a_nice_area-Berlin.html'
+
+
 export const arrayImages = [
     '/franks-1', 
     '/franks-9', 
@@ -13,6 +19,39 @@ export const arrayImages = [
     
 ];
 
+export const heroContent = {
+    de: {
+        title: `Dein <span>Zuhause</span> in unserem Kiez!`,
+        subtitle: null,
+        button: 'Verfügbarkeit prüfen',
+        bookingInfo: {
+          heading: 'Möchten Sie unsere Wohnung reservieren?',
+          secondHeading: 'Sie können dies auf folgende Weise tun:',
+          arte: [
+             {icon: '/airbnb.png', text: 'airbnb', link: AIRBNB},
+             {icon: '/whatsapp_icon.png', text: 'whatsapp', description: 'empfehlenswert' ,link: WHATSAPP},
+            {icon: '/trip_icon.png', text: 'tripadvisor', link: TRIPADVISOR}, 
+          ]
+        }
+    },
+    en: {
+            title: `Your <span>Home</span> in our Kiez!`,
+            button: 'Check Availability',
+            linkButton: "https://www.airbnb.de/rooms/267951?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&check_in=2023-07-30&check_out=2023-08-04&federated_search_id=ef7ac761-8ee3-437d-ba0e-02b9eaada7c8&source_impression_id=p3_1683204831_lmxtMCzJF6dLWSdK",
+            bookingInfo: {
+              heading: 'Would you like to reserve our apartment?',
+              secondHeading: 'You can do it through the following means:',
+              arte: [
+                { icon: '/airbnb.png', text: 'airbnb', link: AIRBNB },
+                {icon: '/whatsapp_icon.png', text: 'whatsapp', description: 'Most recommendable',link: WHATSAPP},
+                {icon: '/trip_icon.png', text: 'tripadvisor', link: TRIPADVISOR}, 
+             ]
+            }
+    }
+
+
+
+  }
 
 export const descriptionContent = {
     de: {

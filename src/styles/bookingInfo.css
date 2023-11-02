@@ -1,0 +1,117 @@
+
+
+.main {
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main h2 {
+    font-size: 20px;
+    padding: 5px 0px;
+    margin-bottom: 15px;
+}
+
+.booking__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (min-width: 769px) {
+    .booking__container {
+        flex-direction: row
+    }
+}
+
+
+.booking__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+
+}
+
+.booking__item:nth-of-type(2) {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    border-radius: 70px;
+    padding: 5px;
+    transition: 1.6s ease-in-out;
+}
+.booking__item:nth-of-type(2):hover {
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    border-radius: 85px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+.booking__item img {
+    width: 4.5rem;
+    
+}
+
+.booking__item h3 {
+    text-transform: capitalize;
+}
+
+.booking__item p {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.rodal,
+.rodal-mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed !important;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.rodal-dialog {
+  display: flex;
+  margin: auto;
+  height: auto !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1.25em;
+  border-radius: 0.3125em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative !important;
+  width: 32em;
+  max-width: 100%;
+}
