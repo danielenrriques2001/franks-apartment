@@ -1,8 +1,8 @@
 ---
 import Layout from "../../layout/Layout.astro";
 import Description from "../../layout/Description.astro";
-import { getLangFromUrl, useTranslations } from '../../utils/functions';
 import Hero from '../../components/Hero'
+import { getLangFromUrl, useTranslations } from '../../utils/functions';
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 

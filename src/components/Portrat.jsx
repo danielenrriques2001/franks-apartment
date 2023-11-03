@@ -8,7 +8,7 @@ const images = [
 
 ];
 
-export default function Portrat() {
+const Portrat = () => {
 
 
     const slidePresentationTime = 6000 // after how many ms slide will change - now 3s / 3000ms
@@ -44,3 +44,6 @@ export default function Portrat() {
   </div>
   )
 }
+
+
+export default Portrat;

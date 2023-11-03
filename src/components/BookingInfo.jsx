@@ -1,16 +1,13 @@
-import  Rodal from 'rodal'
 import '../styles/bookingInfo.css'
-import 'rodal/lib/rodal.css';
+import { Modal } from '@mui/material';
 
 
-export default function BookingInfo({open, setOpen, content}) {
+const BookingInfo = ({open, setOpen, content}) => {
   return (
-    <Rodal 
-        className='rodal'
-        height={600} 
-        width={700}
-        visible={open} 
-        onClose={() => setOpen(!open)}
+    <Modal 
+      open = {open.visible}
+      onClose={() => setOpen({visible: false})}
+
     >
           <div className='main'>
             <h1>{content?.heading}</h1>
@@ -30,10 +27,11 @@ export default function BookingInfo({open, setOpen, content}) {
             </div>
 
           </div>
-    </Rodal>
+    </Modal>
   )
 }
 
 
 
 
+export default BookingInfo;
