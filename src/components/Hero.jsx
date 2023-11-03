@@ -5,9 +5,9 @@ import '../styles/hero.css'
 import Portrat from "./Portrat"
 import BookingInfo from "./BookingInfo";
 
-function Hero({content}) {
+const Hero = ({content}) => {
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState({visible: false})
 
     
     return (
@@ -19,7 +19,7 @@ function Hero({content}) {
             <Portrat/>
           <button 
             className="button"
-            onClick={() => setOpen(true)}
+            onClick={() => setOpen({visible: true})}
             >
             <a>
               {content.button}
