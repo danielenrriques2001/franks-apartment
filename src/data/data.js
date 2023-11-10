@@ -6,6 +6,7 @@ const TRIPADVISOR = 'https://www.tripadvisor.de/VacationRentalReview-g187323-d11
 
 export const arrayImages = [
     '/franks-1', 
+    '/franks-16', 
     '/franks-9', 
     '/franks-10',
     '/franks-15',
@@ -28,9 +29,7 @@ export const heroContent = {
           heading: 'Möchten Sie unsere Wohnung reservieren?',
           secondHeading: 'Sie können dies auf folgende Weise tun:',
           arte: [
-             {icon: '/airbnb.png', text: 'airbnb', link: AIRBNB},
              {icon: '/whatsapp_icon.png', text: 'whatsapp', description: 'empfehlenswert' ,link: WHATSAPP},
-            {icon: '/trip_icon.png', text: 'tripadvisor', link: TRIPADVISOR}, 
           ]
         }
     },
@@ -42,9 +41,7 @@ export const heroContent = {
               heading: 'Would you like to reserve our apartment?',
               secondHeading: 'You can do it through the following means:',
               arte: [
-                { icon: '/airbnb.png', text: 'airbnb', link: AIRBNB },
                 {icon: '/whatsapp_icon.png', text: 'whatsapp', description: 'Most recommendable',link: WHATSAPP},
-                {icon: '/trip_icon.png', text: 'tripadvisor', link: TRIPADVISOR}, 
              ]
             }
     }
