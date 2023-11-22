@@ -3,6 +3,7 @@ import Layout from "../../layout/Layout.astro";
 import Description from "../../layout/Description.astro";
 import Hero from '../../components/Hero'
 import { getLangFromUrl, useTranslations } from '../../utils/functions';
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
@@ -11,6 +12,7 @@ const t = useTranslations(lang);
 
 	<Layout pageTitle = {'Prenzlauer Berg'}>
 		<main>
+			
 			<Hero 
 				client:load
 				content={t('hero')}

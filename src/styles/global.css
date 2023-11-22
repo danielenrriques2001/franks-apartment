@@ -404,3 +404,26 @@ a, li {
   width: 80%;
   margin: 0 auto;
 }
+
+
+/*Grundriss*/
+.grundriss__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    }
+.grundriss__container img {
+  width: 100%;
+  height: auto;
+  padding: 15px 0px;
+  border-radius: 45px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+@media (min-width: 769px) {
+  .grundriss__container img {
+    width: 60%;
+    min-height: 600px
+  }
+}
