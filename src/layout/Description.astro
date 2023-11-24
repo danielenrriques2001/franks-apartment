@@ -1,7 +1,7 @@
 ---
 import Carousel from '../components/Carousel'
 import  '../styles/description.css'
-
+import Button from '../components/Button'
 const {content} = Astro.props;
 
 ---
@@ -11,8 +11,10 @@ const {content} = Astro.props;
     <div>
         <Carousel client:only/>
     </div>
-    <div class='massage'>
-        <!-- <p set:html={content.massage}></p> -->
+    <div class="massage">
+        <Button
+            text={content}
+        />
        
     </div>
     
