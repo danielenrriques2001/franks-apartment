@@ -5,6 +5,7 @@ import Layout from "../../layout/Layout.astro";
 import ApartmentItem  from "../../components/ApartmentItem.astro";
 import { apartmentContent } from '../../data/data.js'
 import { getLangFromUrl, useTranslations } from '../../utils/functions';
+import Grundriss from "../../components/Grundriss.astro";
 
 
 
@@ -16,6 +17,7 @@ const t = useTranslations(lang);
 ---	
 
 	<Layout pageTitle = {'Apartment'}>
+		
 		<main class='apartment'>
 			{
 				apartmentContent.map((apartment) => 	(
@@ -28,6 +30,7 @@ const t = useTranslations(lang);
 					/>
 				))
 			}
+			<Grundriss/>
 
 
 		</main>

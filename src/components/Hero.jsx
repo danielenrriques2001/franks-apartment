@@ -4,10 +4,10 @@ import { useState} from "react";
 import '../styles/hero.css'
 import Portrat from "./Portrat"
 import BookingInfo from "./BookingInfo";
+import Button from "./Button";
 
 const Hero = ({content}) => {
 
-    const [open, setOpen] = useState({visible: false})
 
     
     return (
@@ -17,21 +17,10 @@ const Hero = ({content}) => {
             __html: content?.title
           }}></h1>
             <Portrat/>
-          <button 
-            className="button"
-            onClick={() => setOpen({visible: true})}
-            >
-            <a>
-              {content.button}
-          </a>
-          </button>
 
-          <BookingInfo
-            open={open}
-            setOpen={setOpen}
-            content = {content?.bookingInfo}
-          />
-          
+            <Button
+              text={content}
+            />
         </div>
       </div>
     );

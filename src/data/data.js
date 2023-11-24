@@ -56,7 +56,7 @@ export const descriptionContent = {
 
         description: `Auf <strong>70m²</strong> findet Ihr ausreichend Platz für bis zu vier Personen. Das liebevoll eingerichtete Apartment ist komplett für Selbstversorger ausgestattet und hat allen Komfort.`,
 
-        massage: `<span><a href="/">Jetzt buchen!</a></span>`,
+        button: `Jetzt buchen!`,
     },
 
     en: {
@@ -64,7 +64,7 @@ export const descriptionContent = {
 
         description: ` On <strong>70m²</strong> you will find enough space for up to four people. The lovingly furnished flat is fully equipped for self-catering and has all the comforts.`,
         
-        massage: `<span><a href="/">Book Now!</a></span>`,
+        button: `Book Now!`,
     }
 }
 
