@@ -3,6 +3,9 @@ import { Modal } from '@mui/material';
 import {heroContent} from  '../data/data'
 
 const BookingInfo = ({open, setOpen, content, massage}) => {
+
+  const {de: {bookingInfo: {arte}}} = heroContent
+
   return (
     <Modal 
       open = {open.visible}
@@ -32,9 +35,9 @@ const BookingInfo = ({open, setOpen, content, massage}) => {
             <div className='main'>
               <div className='booking__container'>
                 <div className='booking__item'>
-                  <a href={heroContent['de']?.bookingInfo?.arte[0].link}>
-                    <img src={heroContent['de']?.bookingInfo?.arte[0].icon}/>
-                    <h1>{heroContent['de']?.bookingInfo?.arte[0].text}</h1>
+                  <a href={arte[0].link}>
+                    <img src={arte[0].icon}/>
+                    <h1>{arte[0].text}</h1>
                   </a>
                  
                 </div>
