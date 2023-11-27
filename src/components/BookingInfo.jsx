@@ -1,15 +1,16 @@
 import '../styles/bookingInfo.css'
 import { Modal } from '@mui/material';
+import {heroContent} from  '../data/data'
 
-
-const BookingInfo = ({open, setOpen, content}) => {
+const BookingInfo = ({open, setOpen, content, massage}) => {
   return (
     <Modal 
       open = {open.visible}
       onClose={() => setOpen({visible: false})}
 
     >
-          <div className='main'>
+         { massage === false ? (
+         <div className='main'>
             <h1>{content?.heading}</h1>
             <h2>{content?.secondHeading}</h2>
             <div className='booking__container'>
@@ -27,6 +28,22 @@ const BookingInfo = ({open, setOpen, content}) => {
             </div>
 
           </div>
+          ) : (
+            <div className='main'>
+              <div className='booking__container'>
+                <div className='booking__item'>
+                  <a href={heroContent['de']?.bookingInfo?.arte[0].link}>
+                    <img src={heroContent['de']?.bookingInfo?.arte[0].icon}/>
+                    <h1>{heroContent['de']?.bookingInfo?.arte[0].text}</h1>
+                  </a>
+                 
+                </div>
+
+              </div>
+            </div>
+            
+          )
+          }
     </Modal>
   )
 }
