@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import BookingInfo from './BookingInfo'
-function Button({text}) {
 
+function Button({text, massage}) {
+
+    
     const [open, setOpen] = useState({visible: false})
 
   return (
@@ -19,6 +21,7 @@ function Button({text}) {
             open={open}
             setOpen={setOpen}
             content = {text?.bookingInfo}
+            massage = {massage}
           />
     </>
   )

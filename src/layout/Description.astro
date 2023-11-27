@@ -3,7 +3,6 @@ import Carousel from '../components/Carousel'
 import  '../styles/description.css'
 import Button from '../components/Button'
 const {content} = Astro.props;
-
 ---
 <section class="apartment">
     <h1 set:html={content.heading}></h1>
@@ -13,7 +12,9 @@ const {content} = Astro.props;
     </div>
     <div class="massage">
         <Button
+            client:load
             text={content}
+            massage={true}
         />
        
     </div>

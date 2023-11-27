@@ -20,6 +20,7 @@ const Hero = ({content}) => {
 
             <Button
               text={content}
+              massage={false}
             />
         </div>
       </div>
