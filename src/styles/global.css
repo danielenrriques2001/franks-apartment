@@ -164,7 +164,7 @@ body {
     font-weight: 600;
   }
 
-p, a, li {
+p, a, li, .email__link {
     font-family: 'Alata', sans-serif;
     color: rgb(222, 206, 206);
     text-decoration: none;

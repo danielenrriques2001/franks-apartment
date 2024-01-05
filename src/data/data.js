@@ -69,9 +69,9 @@ export const descriptionContent = {
 }
 
 export const footerContent = {
-    de: `franks apartment | whatsApp: +49 (0) 177 299 5212 | e-Mail: info@franksberlin.com | <a href='/de/anfahrt'>Anfahrt</a> | <a href='/de/impressum'>Impressum</a>`,
+    de: `franks apartment | whatsApp: +49 (0) 177 299 5212 |   <a class='email__link' href='mailto:info@franksberlin.com'>email: info@franksberlin.com</a>| <a href='/de/anfahrt'>Anfahrt</a> | <a href='/de/impressum'>Impressum</a>`,
 
-    en:`franks apartment  | whatsApp: +49 (0) 177 299 5212 | e-Mail: info@franksberlin.com | <a href='/en/anfahrt'>Directions</a> | <a href='/en/impressum'>Imprint</a>`,
+    en:`franks apartment  | whatsApp: +49 (0) 177 299 5212 | <a class='email__link' href='mailto:info@franksberlin.com'>email: info@franksberlin.com</a> | <a href='/en/anfahrt'>Directions</a> | <a href='/en/impressum'>Imprint</a>`,
 }
 
 export const apartmentContent = [
