@@ -151,27 +151,65 @@ export const ContactContent = {
 export const AnfahrtContent = {
     de: {
         title: 'Anfahrt',
-        content : `franks apartment liegt im Herzen Berlins, im Bezirk Prenzlauer Berg am Helmholtzplatz.
-        Dunckerstrasse 80A, 10437 Berlin. <br/> U-Bhf. Eberswalder Strasse (Linie U2) und
-        S-Bhf. Prenzlauer Allee (Linie S8, S9, S41 und S42 Ring) sind in wenigen Minuten zu Fuß erreichbar. <br/> Metro-Tram M10 Husemannstrasse und Metro-Tram M2 Fröbelstrasse liegen fast vor der Tür. 
+        content : `franks apartment liegt im Herzen Berlins, im Bezirk Prenzlauer Berg am Helmholtzplatz. <br/>
+        <strong>Dunckerstrasse 80A, 10437 Berlin.</strong> 
+        <br/>
+        <br/> 
+
+        U-Bhf. Eberswalder Strasse (Linie U2) und S-Bhf. Prenzlauer Allee (Linie S8, S9, <br/>
+        S41 und S42 Ring) sind in wenigen Minuten zu Fuß erreichbar. 
+        <br/>
+        Metro-Tram Station Husemannstrasse (Linie M10) und Metro-Tram Station <br/>
+        Fröbelstrasse (Linie M2) liegen fast vor der Tür.
+
         <br/>
         <br/>
-        Hauptbahnhof: 
+
+        Vom Hauptbahnhof Berlin: 
         <br/>
-        Metro-Tram M10 -> Husemannstrasse Flughafen Schönefeld SXF/BER: S9. Schönefeld -> S-Bhf. Prenzlauer Allee 
+        Metro-Tram (Linie M10) -&gt; Station Husemannstrasse 
+        <br/>
+        <br/>
+        Vom Flughafen Schönefeld BER: 
+        <br/>
+        S-Bahn Schönefeld (Linie S9) -&gt; Station Prenzlauer Allee <br/>
         <br/>
         Weitere Infos über den öffentlichen Personennahverkehr in Berlin findest Du unter
-        <br/>
-        www.bvg.de.
+        www.bvg.de und Google Maps.
         
         `,
     },
     en: {
-        title: 'Directions',
-        content: `Welcome to franks apartment located in the colorful and cosmopolitan neighborhood of Prenzlauer Berg. <br/>
-        With 70m² you'll find plenty of space for up to four people. The caringly decorated apartment is completely furnished for the self-caterer and has all possible conveniences. <br/>
-        For your well-being Frank offers massages right next door in his studio, Massage Deluxe. <br/>
-        We are looking forward to your visit!`,
+        title: 'Anfahrt',
+        content : `franks apartment is located in the heart of Berlin, Prenzlauer Berg district at
+        Helmholtzplatz.<br/>
+        <strong>Dunckerstrasse 80A, 10437 Berlin.</strong> 
+        <br/>
+        <br/> 
+
+        U-Train Subway station Eberswalder Strasse (line U2) and S-Train station Prenzlauer <br/>
+        Allee (lines S8, S9, S41 and S42 Ring) can be reached in a few minutes on foot.
+        <br/>
+        <br/>
+        Metro Tram Station Husemannstrasse (line M10) and Metro Tram Station <br/>
+        Fröbelstrasse (line M2) are almost in front of the door.
+
+        <br/>
+        <br/>
+
+        From Berlin Central Train station:
+        <br/>
+        Metro Tram line M10 -&gt; Tram Station Husemannstrasse
+        <br/>
+        <br/>
+        From Airport BER:
+        <br/>
+        S-Train Schönefeld (line S9) -&gt; S-Train Station Prenzlauer Allee
+        <br/>
+        You can find further information about local public transport in Berlin at
+        www.bvg.de and Google Maps.
+        
+        `,
     }
 }
 
